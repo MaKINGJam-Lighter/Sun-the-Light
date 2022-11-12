@@ -10,6 +10,11 @@ public class ScoreAndHp : MonoBehaviour
     [SerializeField]
     private float hp;
 
+    [SerializeField]
+    private AudioClip destroyClip;
+
+    private AudioSource effectAudioSource;
+
     public float GetScore()
     {
         return score;
@@ -18,6 +23,11 @@ public class ScoreAndHp : MonoBehaviour
     public float GetHp()
     {
         return hp;
+    }
+
+    private void Awake()
+    {
+        effectAudioSource = GameObject.Find("Effect Audio Source").GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -45,6 +55,8 @@ public class ScoreAndHp : MonoBehaviour
     private void DestroyObstacle()
     {
         gameObject.GetComponent<Animator>().SetBool("isDestroy", true);
+        effectAudioSource.clip = destroyClip;
+        effectAudioSource.Play();
     }
 
     private void DecreaseHP()
