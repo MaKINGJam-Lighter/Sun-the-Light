@@ -5,47 +5,70 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float speed; //플레이어의 이동 속도
+    public float gravity;
     public float maxShotDelay;   //불 발사 속도 조절할 딜레이 변수
     public float currentShotDelay;
 
-    public bool isEnterTop;   //각 4방향 경계에 접촉?되었는지 여부 체크할 변수
-    public bool isEnterBottom;
-    public bool isEnterLeft;
-    public bool isEnterRight;
+    private bool isEnterTop;   //각 4방향 경계에 접촉?되었는지 여부 체크할 변수
+    private bool isEnterBottom;
+    private bool isEnterLeft;
+    private bool isEnterRight;
 
     public GameObject fire_foward;
     public GameObject fire_backward;
     public GameObject fire_skill;
 
-    Animator anim;  //나중에 애니메이션 위해서
+    Animator bigWheelAnim;  //나중에 애니메이션 위해서
+    Animator smallWheelAnim;
+    Rigidbody2D player;
 
+    public float curTime = 0.0f;
+    public float coolTime;
 
-    public float curTime;
-    public float coolTime = 13.0f;
-    
+    private bool isFire=true;
+
+    void Awake()
+    {
+        bigWheelAnim = gameObject.transform.GetChild(3).GetComponent<Animator>();
+        smallWheelAnim = gameObject.transform.GetChild(4).GetComponent<Animator>();
+        player = GetComponent<Rigidbody2D>();
+        player.AddForce(Vector2.down * gravity, ForceMode2D.Impulse);
+    }
 
     // Update is called once per frame
-    void Update()
-    {
-
+    void FixedUpdate()
+    { 
+        
         Move();
         Fire(); //총알 발사
         Reload();
 
-        if (curTime <= 0)
+        if (isFire)   //쿨타임 찼을때
         {
             if (Input.GetKeyDown(KeyCode.S))
             {
                 FireSkill();
-                curTime = coolTime;
+                curTime = coolTime;   //현재 time이 쿨타임(13초)으로 초기화
+                isFire = false;   //쿨타임 초기화
             }
-            
+        }
+        cooltime();
+           
+    }
+
+   
+
+    void cooltime()
+    {
+        if (!isFire && curTime <= 0)
+        {
+           // curTime = 13.0f;
+            isFire = true;
         }
         else
-        {
+        {  //curTime > 0
             curTime -= Time.deltaTime;
         }
-           
     }
 
 
@@ -68,6 +91,36 @@ public class Player : MonoBehaviour
         Vector3 nextPosition = new Vector3(h, v, 0) * speed * Time.deltaTime;
 
         transform.position = currentPosition + nextPosition;
+
+        if (Input.GetButton("Horizontal") || Input.GetButton("Vertical"))
+        {
+            Debug.Log("fdjfke");
+            bigWheelAnim.SetBool("isMoving", true);
+            smallWheelAnim.SetBool("isMoving", true);
+        }
+        else
+        {
+            bigWheelAnim.SetBool("isMoving", false);
+            smallWheelAnim.SetBool("isMoving", false);
+        }
+
+
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.name == "Bottom")
+        {
+            isEnterBottom = true;
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.name == "Bottom")
+        {
+            isEnterBottom = false;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -125,14 +178,16 @@ public class Player : MonoBehaviour
         if (Input.GetButton("FireFoward"))   //전방공격: a키
         {
             if (!Input.GetButton("FireFoward")) return;
-            GameObject fire = Instantiate(fire_foward, transform.position, transform.rotation);
+            Vector3 firePos = transform.position + new Vector3(0, -0.5f, 0);
+            GameObject fire = Instantiate(fire_foward, firePos, transform.rotation);
             Rigidbody2D rigid = fire.GetComponent<Rigidbody2D>();
             rigid.AddForce(Vector2.right * 10, ForceMode2D.Impulse);
         }
         else if (Input.GetButton("FireBackward")) //후방공격: d키
         {
             if (!Input.GetButton("FireBackward")) return;
-            GameObject fire = Instantiate(fire_backward, transform.position, transform.rotation);
+            Vector3 firePos = transform.position + new Vector3(0, -0.5f, 0);
+            GameObject fire = Instantiate(fire_backward, firePos, transform.rotation);
             Rigidbody2D rigid = fire.GetComponent<Rigidbody2D>();
             rigid.AddForce(Vector2.left * 10, ForceMode2D.Impulse);
         }
@@ -148,17 +203,16 @@ public class Player : MonoBehaviour
     void FireSkill()  //스킬 버튼 누르면 원모양으로 불이 퍼져나감 
     {
         
-        int roundNumA = 10;
-        int speed = 10;
+        int roundNumA = 20;
+
 
         for (int i = 0; i < roundNumA; i++)
         {
-             GameObject fireObj = Instantiate(fire_skill, transform.position + new Vector3(0, 0.3f), Quaternion.Euler(0, 0, (360 * i / (roundNumA - 1)) + 180));
-
-             Rigidbody2D rigid = fireObj.GetComponent<Rigidbody2D>();
+            GameObject fireObj = Instantiate(fire_skill, transform.position, Quaternion.identity);
+            Rigidbody2D rigid = fireObj.GetComponent<Rigidbody2D>();
             Vector2 dirVec = new Vector2(Mathf.Cos(Mathf.PI * 2 * i / roundNumA),
                              Mathf.Sin(Mathf.PI * 2 * i /roundNumA));  //원 형태로 발사
-            rigid.AddForce(dirVec.normalized * 5, ForceMode2D.Impulse);
+             rigid.AddForce(dirVec.normalized * 5, ForceMode2D.Impulse);
 
 
             //Vector2 dirVec = new Vector2(Mathf.Cos(Mathf.PI * 2 * i / (roundNumA - 1)),
@@ -167,6 +221,8 @@ public class Player : MonoBehaviour
             //fireObj.GetComponent<Rigidbody2D>().AddForce(dirVec * speed);
 
         }
+        isFire = true;
     }
+
 }
 
