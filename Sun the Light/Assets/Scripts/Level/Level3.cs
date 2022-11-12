@@ -11,7 +11,6 @@ public class Level3 : Level
 
     override public void SetLevel()
     {
-        Debug.Log("Set Level, " + timeArr);
         CreateObstacle createObstacle = GameObject.Find("ObstacleManager").GetComponent<CreateObstacle>();
         createObstacle.timeArr = timeArr;
         createObstacle.obstacleIndexArr = obstacleIndexArr;
