@@ -10,8 +10,8 @@ public class GameManager : MonoBehaviour
     //리스타트버튼 가져오기
     public GameObject RestartButton;
     //플레이어가 뭐 하면 포인트올라가게(플레이어에서 포인트 불러와서 올리기)
-    public int score=0;
-    public int maxScore;
+    public float score=0;
+    public float maxScore;
     public Text gameOverMsg;
 
    
