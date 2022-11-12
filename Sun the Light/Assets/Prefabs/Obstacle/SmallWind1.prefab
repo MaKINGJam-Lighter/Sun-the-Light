@@ -138,7 +138,9 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   score: 100
   hp: 2
+  life: 1
   destroyClip: {fileID: 8300000, guid: a2a2327ffc191447d8338e32beb2b1a6, type: 3}
+  hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
 --- !u!50 &2302648043248868829
 Rigidbody2D:
   serializedVersion: 4
@@ -298,7 +300,9 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   score: 100
   hp: 2
+  life: 1
   destroyClip: {fileID: 8300000, guid: a2a2327ffc191447d8338e32beb2b1a6, type: 3}
+  hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
 --- !u!50 &1545946803451679336
 Rigidbody2D:
   serializedVersion: 4
@@ -509,7 +513,9 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   score: 100
   hp: 2
+  life: 1
   destroyClip: {fileID: 8300000, guid: a2a2327ffc191447d8338e32beb2b1a6, type: 3}
+  hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
 --- !u!50 &8210096574861447530
 Rigidbody2D:
   serializedVersion: 4
@@ -669,7 +675,9 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   score: 100
   hp: 2
+  life: 1
   destroyClip: {fileID: 8300000, guid: a2a2327ffc191447d8338e32beb2b1a6, type: 3}
+  hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
 --- !u!50 &3722502192105461770
 Rigidbody2D:
   serializedVersion: 4
@@ -829,7 +837,9 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   score: 100
   hp: 2
+  life: 1
   destroyClip: {fileID: 8300000, guid: a2a2327ffc191447d8338e32beb2b1a6, type: 3}
+  hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
 --- !u!50 &5225100043967528734
 Rigidbody2D:
   serializedVersion: 4
