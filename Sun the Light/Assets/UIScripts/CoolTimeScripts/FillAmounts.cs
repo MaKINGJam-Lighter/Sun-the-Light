@@ -16,7 +16,7 @@ public class FillAmounts : MonoBehaviour
         {
          
             //인자: 쿨타임 초
-            StartCoroutine(CoolTime(13f));
+            StartCoroutine(CoolTime(13.0f));
         }    
     }
 
@@ -29,7 +29,12 @@ public class FillAmounts : MonoBehaviour
             //이거하는동안 클릭 못하게
             
             cool -= Time.deltaTime;
-            img_Skill.fillAmount = (1.0f / cool);
+            img_Skill.fillAmount = (13.0f - cool)/13.0f;
+            //0.9232까지만 차는 것 해결
+            if (img_Skill.fillAmount > 0.923f)
+            {
+                img_Skill.fillAmount = 1.0f;
+            }
             yield return new WaitForFixedUpdate();
         }
 
