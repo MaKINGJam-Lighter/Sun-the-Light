@@ -50,11 +50,13 @@ MonoBehaviour:
   - {fileID: 3597525510079925012, guid: b74a8b2d40e4b444a9320eddd2954033, type: 3}
   - {fileID: 3597525510079925012, guid: f5593660806834b729d9ac28fcf6125e, type: 3}
   - {fileID: 3597525510079925012, guid: be70eb0855b664a0b979de887296bdda, type: 3}
+  - {fileID: 3597525510079925012, guid: d5ccfc65ffbef4a1fbde4d591f947dda, type: 3}
+  - {fileID: 3597525510079925012, guid: 4eef8e1f2044f4fc68a76f5731ce52ef, type: 3}
   createPoints:
   - {fileID: 0}
   - {fileID: 0}
   timeArr: []
-  obstacleIndexArr: []
+  obstacleIndexArr: 
   angleArr: []
   speedArr: []
   directionArr:

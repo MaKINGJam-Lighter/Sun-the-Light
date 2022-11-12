@@ -114,6 +114,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 500
   hp: 10
+  effectAudioSource: {fileID: 0}
+  destroyClip: {fileID: 8300000, guid: 3b88468a119494313a7f856e6a046ba0, type: 3}
 --- !u!95 &9101306442045611494
 Animator:
   serializedVersion: 3
@@ -295,6 +297,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 500
   hp: 10
+  effectAudioSource: {fileID: 0}
+  destroyClip: {fileID: 8300000, guid: 3b88468a119494313a7f856e6a046ba0, type: 3}
 --- !u!95 &8114066265664754393
 Animator:
   serializedVersion: 3
