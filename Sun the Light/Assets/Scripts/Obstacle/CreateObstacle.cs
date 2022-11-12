@@ -53,7 +53,7 @@ public class CreateObstacle : MonoBehaviour
         }
         obstacle.GetComponent<MoveObstacle>().SetOption(angle, speed, direction);
 
-        time = Random.Range(1f, 6f);
+        time = Random.Range(1f, 4f);
         canCreate = true;
     }
 }
