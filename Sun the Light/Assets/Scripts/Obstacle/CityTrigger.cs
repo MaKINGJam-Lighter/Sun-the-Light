@@ -53,7 +53,6 @@ public class CityTrigger : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            Debug.Log("In");
             isSoundPlay = false;
             isStart = true;
         }
@@ -63,7 +62,6 @@ public class CityTrigger : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            Debug.Log("Out");
             isSoundPlay = false;
             isStart = false;
             timer = 0;

@@ -79,7 +79,7 @@ public class ScoreAndHp : MonoBehaviour
 
         if(gameManager.maxScore < gameManager.score)
         {
-            gameManager.maxScore = score;
+            gameManager.maxScore = gameManager.score;
         }
     }
 }
