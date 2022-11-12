@@ -92,16 +92,16 @@ public class Player : MonoBehaviour
 
         transform.position = currentPosition + nextPosition;
 
-        if (Input.GetButton("Horizontal") || Input.GetButton("Vertical"))
-        {
-            bigWheelAnim.SetBool("isMoving", true);
-            smallWheelAnim.SetBool("isMoving", true);
-        }
-        else
-        {
-            bigWheelAnim.SetBool("isMoving", false);
-            smallWheelAnim.SetBool("isMoving", false);
-        }
+        //if (Input.GetButton("Horizontal") || Input.GetButton("Vertical"))
+        //{
+            //bigWheelAnim.SetBool("isMoving", true);
+            //smallWheelAnim.SetBool("isMoving", true);
+        //}
+        //else
+        //{
+            //bigWheelAnim.SetBool("isMoving", false);
+            //smallWheelAnim.SetBool("isMoving", false);
+       // }
 
 
     }
@@ -211,13 +211,7 @@ public class Player : MonoBehaviour
             Rigidbody2D rigid = fireObj.GetComponent<Rigidbody2D>();
             Vector2 dirVec = new Vector2(Mathf.Cos(Mathf.PI * 2 * i / roundNumA),
                              Mathf.Sin(Mathf.PI * 2 * i /roundNumA));  //원 형태로 발사
-             rigid.AddForce(dirVec.normalized * 5, ForceMode2D.Impulse);
-
-
-            //Vector2 dirVec = new Vector2(Mathf.Cos(Mathf.PI * 2 * i / (roundNumA - 1)),
-            //Mathf.Sin(Mathf.PI * 2 * i / (roundNumA - 1)));  //원 형태로 발사
-
-            //fireObj.GetComponent<Rigidbody2D>().AddForce(dirVec * speed);
+            rigid.AddForce(dirVec.normalized * 5, ForceMode2D.Impulse);
 
         }
         isFire = true;
