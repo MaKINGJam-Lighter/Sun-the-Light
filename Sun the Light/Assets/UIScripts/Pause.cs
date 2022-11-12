@@ -17,7 +17,7 @@ public class Pause : MonoBehaviour
     void Update()
     {
         //엔터버튼 누르면 일시정지
-        if(Input.GetKeyDown(KeyCode.Return)) {
+        if(Input.GetKeyDown(KeyCode.Escape)) {
             //일시정지 활성화
             if (isPause == false)
             {

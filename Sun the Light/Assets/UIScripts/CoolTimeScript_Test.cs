@@ -23,7 +23,6 @@ public class CoolTimeScript_Test : MonoBehaviour
         //클릭됐고
         if (isClicked)
         {
-           
             //쿨타임 다 안 됐으면
             if (leftTime > 0)
             {
