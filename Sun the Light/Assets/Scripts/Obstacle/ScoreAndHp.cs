@@ -40,7 +40,7 @@ public class ScoreAndHp : MonoBehaviour
 
     private void Start()
     {
-        effectAudioSource = GameObject.Find("Effect Audio Source").GetComponent<AudioSource>();
+        effectAudioSource = GetComponent<AudioSource>();
         healthBar = GameObject.FindWithTag("HP").GetComponent<Slider>();
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
