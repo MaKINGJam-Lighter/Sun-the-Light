@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class Player : MonoBehaviour
 
     public float curTime = 0.0f;
     public float coolTime;
+    public Image skillCoolImg;
 
     private bool isFire=true;
 
@@ -37,30 +39,23 @@ public class Player : MonoBehaviour
 
     // Update is called once per frame
     void FixedUpdate()
-    { 
-        
+    {
+
         Move();
         Fire(); //총알 발사
         Reload();
 
-        if (isFire)   //쿨타임 찼을때
+        if (Input.GetKeyDown(KeyCode.S) && skillCoolImg.fillAmount == 1.0f)
         {
-            if (Input.GetKeyDown(KeyCode.S))
-            {
-                FireSkill();
-                curTime = coolTime;   //현재 time이 쿨타임(13초)으로 초기화
-                isFire = false;   //쿨타임 초기화
-            }
+            FireSkill();
         }
-        cooltime();
-           
     }
 
    
 
     void cooltime()
     {
-        if (!isFire && curTime <= 0)
+        if (!isFire && skillCoolImg.fillAmount == 1.0f)
         {
            // curTime = 13.0f;
             isFire = true;
