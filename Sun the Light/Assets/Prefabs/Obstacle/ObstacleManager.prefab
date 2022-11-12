@@ -53,3 +53,10 @@ MonoBehaviour:
   createPoints:
   - {fileID: 0}
   - {fileID: 0}
+  timeArr: []
+  obstacleIndexArr: []
+  angleArr: []
+  speedArr: []
+  directionArr:
+  - -1
+  - 1

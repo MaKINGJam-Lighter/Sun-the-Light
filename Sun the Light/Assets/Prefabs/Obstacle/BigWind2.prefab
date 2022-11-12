@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 8660481873448182873}
   - component: {fileID: 3629986913548971807}
   - component: {fileID: 8078766573418863955}
+  - component: {fileID: 4369816252553065060}
   m_Layer: 0
   m_Name: wind3
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,11 +94,11 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.013889487, y: 0.011126846}
-  m_Size: {x: 0.5024238, y: 0.28621918}
+  m_Offset: {x: -0.020138325, y: 0.00091836107}
+  m_Size: {x: 0.5977035, y: 0.3338593}
   m_Direction: 1
 --- !u!95 &8078766573418863955
 Animator:
@@ -118,6 +119,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4369816252553065060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2716419894829695374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65588d091445b40e6ae67ddc3a4a6cbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 300
+  hp: 5
 --- !u!1 &3597525510079925012
 GameObject:
   m_ObjectHideFlags: 0
@@ -180,9 +195,10 @@ GameObject:
   - component: {fileID: 9048895442319396481}
   - component: {fileID: 3122305932462798684}
   - component: {fileID: 6885206879042327713}
+  - component: {fileID: 6694238489945091359}
   m_Layer: 0
   m_Name: wind1
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -261,11 +277,11 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.013889487, y: 0.011126846}
-  m_Size: {x: 0.5024238, y: 0.28621918}
+  m_Offset: {x: -0.020138325, y: 0.00091836107}
+  m_Size: {x: 0.5977035, y: 0.3338593}
   m_Direction: 1
 --- !u!95 &6885206879042327713
 Animator:
@@ -286,6 +302,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6694238489945091359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4724740612771191527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65588d091445b40e6ae67ddc3a4a6cbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 300
+  hp: 5
 --- !u!1 &6450954335565717347
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,9 +328,10 @@ GameObject:
   - component: {fileID: 6414905212858604553}
   - component: {fileID: 2548243696151847042}
   - component: {fileID: 2107069162260552391}
+  - component: {fileID: 321520835554149003}
   m_Layer: 0
   m_Name: wind4
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -379,11 +410,11 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.013889487, y: 0.011126846}
-  m_Size: {x: 0.5024238, y: 0.28621918}
+  m_Offset: {x: -0.020138325, y: 0.00091836107}
+  m_Size: {x: 0.5977035, y: 0.3338593}
   m_Direction: 1
 --- !u!95 &2107069162260552391
 Animator:
@@ -404,6 +435,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &321520835554149003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6450954335565717347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65588d091445b40e6ae67ddc3a4a6cbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 300
+  hp: 5
 --- !u!1 &8996958219964695702
 GameObject:
   m_ObjectHideFlags: 0
@@ -416,9 +461,10 @@ GameObject:
   - component: {fileID: 3368773283043084873}
   - component: {fileID: 933293198640430975}
   - component: {fileID: 317328769727200338}
+  - component: {fileID: 4710701650436218207}
   m_Layer: 0
   m_Name: wind2
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -497,11 +543,11 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.013889487, y: 0.011126846}
-  m_Size: {x: 0.5024238, y: 0.28621918}
+  m_Offset: {x: -0.020138325, y: 0.00091836107}
+  m_Size: {x: 0.5977035, y: 0.3338593}
   m_Direction: 1
 --- !u!95 &317328769727200338
 Animator:
@@ -522,3 +568,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4710701650436218207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8996958219964695702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65588d091445b40e6ae67ddc3a4a6cbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 300
+  hp: 5
