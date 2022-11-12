@@ -11,12 +11,17 @@ public class CityTrigger : MonoBehaviour
     private bool isStart = false;
     private float timer = 0f;
     private bool isSoundPlay = false;
-    private AudioSource audioSource;
+
+    [SerializeField]
+    private AudioSource starAudioSource;
+
+    [SerializeField]
+    private AudioSource cityAudioSource;
 
     // Start is called before the first frame update
     void Start()
     {
-        audioSource = gameObject.GetComponent<AudioSource>();   
+          
     }
 
     // Update is called once per frame
@@ -28,11 +33,16 @@ public class CityTrigger : MonoBehaviour
 
             if(timer >= 2.0f)
             {
-                healBar.value -= 2 * Time.deltaTime;
+                healBar.value -= 2f * Time.deltaTime;
 
-                if (!isSoundPlay)
+                if (!isSoundPlay && GameObject.FindWithTag("Player").transform.position.y > 0)
                 {
-                    audioSource.Play();
+                    starAudioSource.Play();
+                    isSoundPlay = true;
+                }
+                else if (!isSoundPlay && GameObject.FindWithTag("Player").transform.position.y < 0)
+                {
+                    cityAudioSource.Play();
                     isSoundPlay = true;
                 }
             }
@@ -43,6 +53,7 @@ public class CityTrigger : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            Debug.Log("In");
             isSoundPlay = false;
             isStart = true;
         }
@@ -52,6 +63,7 @@ public class CityTrigger : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            Debug.Log("Out");
             isSoundPlay = false;
             isStart = false;
             timer = 0;

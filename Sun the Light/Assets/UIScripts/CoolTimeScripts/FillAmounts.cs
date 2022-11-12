@@ -12,7 +12,7 @@ public class FillAmounts : MonoBehaviour
     {
         //스킬버튼누르기
         //T버튼 눌렸고&& 스킬 쿨타임도 돌아온 상태일때만
-        if (Input.GetKeyDown(KeyCode.T)&& img_Skill.fillAmount==1.0f)
+        if (Input.GetKeyDown(KeyCode.S)&& img_Skill.fillAmount==1.0f)
         {
          
             //인자: 쿨타임 초

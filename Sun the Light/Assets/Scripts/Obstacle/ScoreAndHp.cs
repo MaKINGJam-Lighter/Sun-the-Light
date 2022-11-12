@@ -31,10 +31,11 @@ public class ScoreAndHp : MonoBehaviour
         return hp;
     }
 
-    private void Awake()
+    private void Start()
     {
         effectAudioSource = GameObject.Find("Effect Audio Source").GetComponent<AudioSource>();
         healthBar = GameObject.FindWithTag("HP").GetComponent<Slider>();
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     private void Update()
@@ -56,6 +57,7 @@ public class ScoreAndHp : MonoBehaviour
         {
             DestroyObstacle();
             IncreaseScore();
+            Destroy(collision.gameObject);
         }
     }
 
