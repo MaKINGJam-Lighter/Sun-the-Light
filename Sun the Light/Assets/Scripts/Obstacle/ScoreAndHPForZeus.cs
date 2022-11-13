@@ -3,11 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScoreAndHp : MonoBehaviour
+public class ScoreAndHPForZeus : MonoBehaviour
 {
     public Slider healthBar;
-    public Text UIScore;
-    public Text UIMaxScore;
     public GameManager gameManager;
 
     [SerializeField]
@@ -17,13 +15,22 @@ public class ScoreAndHp : MonoBehaviour
     private float hp;
 
     [SerializeField]
-    private int life;
+    private Slider hpBar;
+
+    [SerializeField]
+    private float attackPower;
+
+    [SerializeField]
+    private Animator zeusAnimator;
 
     [SerializeField]
     private AudioClip destroyClip;
 
     [SerializeField]
     private AudioClip hurtClip;
+
+    [SerializeField]
+    private bool isZeus;
 
     private AudioSource playerEffectAudioSource;
     private AudioSource effectAudioSource;
@@ -55,37 +62,41 @@ public class ScoreAndHp : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player")
+        if (collision.tag == "Player")
         {
             playerEffectAudioSource = collision.GetComponent<AudioSource>();
-            DestroyObstacle();
             DecreaseHP();
         }
-        else if(collision.tag == "Skill")
+        else if (collision.tag == "Skill")
         {
-            life -= 1;
-            if (life == 0)
+            hpBar.value -= attackPower;
+            IncreaseScore();
+
+            if (hpBar.value == 0)
             {
-                DestroyObstacle();
-                IncreaseScore();
+                if (isZeus)
+                {
+                    gameManager.score += 1500;
+                    isZeus = false;
+                    Debug.Log("clear score");
+                }
+                zeusAnimator.SetBool("isDead", true);
                 Destroy(collision.gameObject);
+                Invoke("DestroyObstacle", 1f);
             }
             else
             {
-                if (destroyClip != null)
-                {
-                    effectAudioSource.clip = destroyClip;
-                    effectAudioSource.Play();
-                }
+                //effectAudioSource.clip = destroyClip;
+                //effectAudioSource.Play();
             }
         }
     }
 
     private void DestroyObstacle()
     {
-        gameObject.GetComponent<Animator>().SetBool("isDestroy", true);
-        effectAudioSource.clip = destroyClip;
-        effectAudioSource.Play();
+        Destroy(gameObject);
+        //effectAudioSource.clip = destroyClip;
+        //effectAudioSource.Play();
     }
 
     private void DecreaseHP()
@@ -99,7 +110,7 @@ public class ScoreAndHp : MonoBehaviour
     {
         gameManager.score += score;
 
-        if(gameManager.maxScore < gameManager.score)
+        if (gameManager.maxScore < gameManager.score)
         {
             gameManager.maxScore = gameManager.score;
         }

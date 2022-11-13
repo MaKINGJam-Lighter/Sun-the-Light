@@ -7,7 +7,11 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     private Level[] levels;
 
+    [SerializeField]
+    private GameObject zeus;
+
     private float score;
+    private bool once = true;
 
     private void Awake()
     {
@@ -28,19 +32,15 @@ public class LevelManager : MonoBehaviour
         if(score >= 30000)
         {
             levels[2].SetLevel();
+            if (once)
+            {
+                zeus.SetActive(true);
+                once = false;
+            }
         }
         else if(score >= 10000)
         {
             levels[1].SetLevel();
-        }
-
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            levels[1].SetLevel();
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            levels[2].SetLevel();
         }
     }
 
