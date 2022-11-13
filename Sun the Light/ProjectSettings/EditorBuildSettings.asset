@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StartAnimation.unity
     guid: 372eb197a67bb554f9c2e21ac0318347
+  - enabled: 1
+    path: Assets/Scenes/OverGame.unity
+    guid: 98f9fff46c5ab5e48a26689162a60e1c
   m_configObjects: {}
