@@ -1111,7 +1111,6 @@ MonoBehaviour:
   cloud: {fileID: 325886015}
   wind: {fileID: 1620295738}
   amount: {fileID: 151131035}
-  count: 0
 --- !u!4 &222849827
 Transform:
   m_ObjectHideFlags: 0
@@ -7815,7 +7814,7 @@ SpriteRenderer:
   m_Size: {x: 13.33, y: 7.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &2001749534
