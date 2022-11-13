@@ -654,7 +654,11 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+<<<<<<< Updated upstream
   m_WasSpriteAssigned: 0
+=======
+  m_WasSpriteAssigned: 1
+>>>>>>> Stashed changes
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &132020651
@@ -2109,8 +2113,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 441968597}
+<<<<<<< Updated upstream
   time: 0
   F_time: 1
+=======
+>>>>>>> Stashed changes
 --- !u!1 &456534759
 GameObject:
   m_ObjectHideFlags: 0
@@ -4687,8 +4694,11 @@ MonoBehaviour:
   cloud: {fileID: 1033035357}
   wind: {fileID: 1223189870}
   amount: {fileID: 1411669455}
+<<<<<<< Updated upstream
   black: {fileID: 0}
   count: 0
+=======
+>>>>>>> Stashed changes
 --- !u!4 &1168687354
 Transform:
   m_ObjectHideFlags: 0
@@ -8052,8 +8062,11 @@ MonoBehaviour:
   cloud: {fileID: 0}
   wind: {fileID: 0}
   amount: {fileID: 0}
+<<<<<<< Updated upstream
   black: {fileID: 0}
   count: 0
+=======
+>>>>>>> Stashed changes
 --- !u!1 &2131730059
 GameObject:
   m_ObjectHideFlags: 0
