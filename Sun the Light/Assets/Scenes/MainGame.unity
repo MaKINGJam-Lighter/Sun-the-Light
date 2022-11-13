@@ -1780,6 +1780,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 896288106}
   m_CullTransparentMesh: 0
+--- !u!1 &896789397 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5041492618847424908, guid: b7695711245da42588a729e59017e626,
+    type: 3}
+  m_PrefabInstance: {fileID: 1953944734}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &952531570
 GameObject:
   m_ObjectHideFlags: 0
@@ -1918,6 +1924,7 @@ MonoBehaviour:
   cityAudioSource: {fileID: 1160989619}
   playerAudioSource: {fileID: 166366902}
   hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
+  cityFire: {fileID: 896789397}
 --- !u!4 &1101260609
 Transform:
   m_ObjectHideFlags: 0
@@ -4081,6 +4088,75 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 12}
   m_EdgeRadius: 0
+--- !u!1001 &1953944734
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2226783838583276025, guid: b7695711245da42588a729e59017e626,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226783838583276025, guid: b7695711245da42588a729e59017e626,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226783838583276025, guid: b7695711245da42588a729e59017e626,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226783838583276025, guid: b7695711245da42588a729e59017e626,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226783838583276025, guid: b7695711245da42588a729e59017e626,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226783838583276025, guid: b7695711245da42588a729e59017e626,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226783838583276025, guid: b7695711245da42588a729e59017e626,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226783838583276025, guid: b7695711245da42588a729e59017e626,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226783838583276025, guid: b7695711245da42588a729e59017e626,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226783838583276025, guid: b7695711245da42588a729e59017e626,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226783838583276025, guid: b7695711245da42588a729e59017e626,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5041492618847424908, guid: b7695711245da42588a729e59017e626,
+        type: 3}
+      propertyPath: m_Name
+      value: CityFire
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b7695711245da42588a729e59017e626, type: 3}
 --- !u!1 &2024933087
 GameObject:
   m_ObjectHideFlags: 0
