@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
     Animator smallWheelAnim;
     Rigidbody2D player;
 
-    public float curTime = 0.0f;
+    public float curTime;
     public float coolTime;
     public Image skillCoolImg;
 
@@ -34,35 +34,51 @@ public class Player : MonoBehaviour
         bigWheelAnim = gameObject.transform.GetChild(3).GetComponent<Animator>();
         smallWheelAnim = gameObject.transform.GetChild(4).GetComponent<Animator>();
         player = GetComponent<Rigidbody2D>();
-        player.AddForce(Vector2.down * gravity, ForceMode2D.Impulse);
+        curTime = coolTime;
+        //player.AddForce(Vector2.down * gravity, ForceMode2D.Impulse);
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-
+        player.velocity = Vector2.down * gravity;
         Move();
         Fire(); //총알 발사
         Reload();
 
+
+    }
+
+    void Update()
+    {
         if (Input.GetKeyDown(KeyCode.S) && skillCoolImg.fillAmount == 1.0f)
         {
-            FireSkill();
+            if (isFire)
+            {
+                FireSkill();
+                isFire = false;
+            }
+            
+        }
+
+        if (!isFire)  //쿨타임 아직 안찼을때만 쿨타임 감소시킴
+        {
+            cooltime();
         }
     }
 
-   
 
     void cooltime()
     {
-        if (!isFire && skillCoolImg.fillAmount == 1.0f)
+        if (curTime > 0)
         {
-           // curTime = 13.0f;
-            isFire = true;
-        }
-        else
-        {  //curTime > 0
             curTime -= Time.deltaTime;
+        }
+        else //curTime <= 0
+        {
+            curTime = 13.0f;
+            isFire = true;
+            skillCoolImg.fillAmount = 1.0f;
         }
     }
 
@@ -74,12 +90,14 @@ public class Player : MonoBehaviour
         if ((isEnterRight && h == 1) || (isEnterLeft && h == -1))
         {
             h = 0;
+            
         }
 
         float v = Input.GetAxisRaw("Vertical");
         if ((isEnterTop && v == 1) || (isEnterBottom && v == -1))
         {
             v = 0;
+            
         }
 
         Vector3 currentPosition = transform.position;
@@ -197,7 +215,7 @@ public class Player : MonoBehaviour
     void FireSkill()  //스킬 버튼 누르면 원모양으로 불이 퍼져나감 
     {
         
-        int roundNumA = 20;
+        int roundNumA =  25;
 
 
         for (int i = 0; i < roundNumA; i++)
@@ -209,7 +227,7 @@ public class Player : MonoBehaviour
             rigid.AddForce(dirVec.normalized * 5, ForceMode2D.Impulse);
 
         }
-        isFire = true;
+        isFire = false;
     }
 
 }
