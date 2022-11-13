@@ -2,36 +2,70 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SceneController : MonoBehaviour
 {
+    [SerializeField]
+    private Animator fadeInOutPanel;
+
     public void GoHome()
     {
-        SceneManager.LoadScene("Home");
+        fadeInOutPanel.SetBool("isFadeOut", true);
+        Invoke("DelayGoHome", 1f);
     }
 
     public void GoStartAnimation()
     {
-        SceneManager.LoadScene("StartAnimation");
+        fadeInOutPanel.SetBool("isFadeOut", true);
+        Invoke("DelayGoStartAnimation", 1f);
     }
 
     public void GoHowToPlay()
     {
-        SceneManager.LoadScene("HowToPlay");
+        fadeInOutPanel.SetBool("isFadeOut", true);
+        Invoke("DelayGoHowToPlay", 1f);
     }
 
     public void GoInfo()
     {
-        SceneManager.LoadScene("Info");
+        fadeInOutPanel.SetBool("isFadeOut", true);
+        Invoke("DelayGoInfo", 1f);
     }
 
     public void GoMainGame()
     {
-        SceneManager.LoadScene("MainGame");
+        fadeInOutPanel.SetBool("isFadeOut", true);
+        Invoke("DelayGoMainGame", 1f);
     }
 
     //public void GoEnding()
     //{
     //    SceneManager.LoadScene("EndingAnimation");
     //}
+
+    public void DelayGoHome()
+    {
+        SceneManager.LoadScene("Home");
+    }
+
+    public void DelayGoStartAnimation()
+    {
+        SceneManager.LoadScene("StartAnimation");
+    }
+
+    public void DelayGoHowToPlay()
+    {
+        SceneManager.LoadScene("HowToPlay");
+    }
+
+    public void DelayGoInfo()
+    {
+        SceneManager.LoadScene("Info");
+    }
+
+    public void DelayGoMainGame()
+    {
+        SceneManager.LoadScene("MainGame");
+    }
 }
