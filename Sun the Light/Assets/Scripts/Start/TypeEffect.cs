@@ -8,7 +8,7 @@ public class TypeEffect : MonoBehaviour
 {
 
     Text tx;
-    bool done = false;
+    public bool done = false;
     private string Msg = "";
     public GameObject next;
 
