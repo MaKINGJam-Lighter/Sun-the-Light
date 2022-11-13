@@ -20,6 +20,11 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("HowToPlay");
     }
 
+    public void GoInfo()
+    {
+        SceneManager.LoadScene("Info");
+    }
+
     public void GoMainGame()
     {
         SceneManager.LoadScene("MainGame");
