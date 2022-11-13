@@ -18,6 +18,12 @@ public class CityTrigger : MonoBehaviour
     [SerializeField]
     private AudioSource cityAudioSource;
 
+    [SerializeField]
+    private AudioSource playerAudioSource;
+
+    [SerializeField]
+    private AudioClip hurtClip;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +40,12 @@ public class CityTrigger : MonoBehaviour
             if(timer >= 2.0f)
             {
                 healBar.value -= 2f * Time.deltaTime;
+
+                if (!playerAudioSource.isPlaying)
+                {
+                    playerAudioSource.clip = hurtClip;
+                    playerAudioSource.Play();
+                }
 
                 if (!isSoundPlay && GameObject.FindWithTag("Player").transform.position.y > 0)
                 {
