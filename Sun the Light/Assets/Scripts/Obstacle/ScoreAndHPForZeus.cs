@@ -78,6 +78,7 @@ public class ScoreAndHPForZeus : MonoBehaviour
                 {
                     gameManager.score += 1500;
                     isZeus = false;
+                    PlayerPrefs.SetInt("ClearStage", 4);
                 }
                 zeusAnimator.SetBool("isDead", true);
                 Destroy(collision.gameObject);
