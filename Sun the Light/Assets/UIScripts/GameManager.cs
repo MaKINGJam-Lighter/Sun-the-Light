@@ -14,13 +14,13 @@ public class GameManager : MonoBehaviour
     public float maxScore = 0;
     public Text gameOverMsg;
 
-   
+    private void Awake()
+    {
+        maxScore = PlayerPrefs.GetFloat("MaxScore");
+    }
     void Update()
     {
-        //리스타트버튼 테스트>된다!
-        if (Input.GetKeyDown(KeyCode.R)){
-            CallRestartBtn();
-        }        
+              
     }
     //플레이어 죽으면(플레이어 죽을 때의 메소드에서 이 메소드 호출)
     public void CallRestartBtn()

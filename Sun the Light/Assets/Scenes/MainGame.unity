@@ -1523,6 +1523,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 1590366875}
   damage: 10
+  gameManager: {fileID: 804690580}
+  sceneController: {fileID: 952531571}
 --- !u!114 &804690580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1773,6 +1775,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 896288106}
   m_CullTransparentMesh: 0
+--- !u!1 &952531570
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 952531572}
+  - component: {fileID: 952531571}
+  m_Layer: 0
+  m_Name: SceneController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &952531571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952531570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7926bdda8560317459984e7aba436b70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeInOutPanel: {fileID: 5551905074506175024}
+--- !u!4 &952531572
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952531570}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 960, y: 540, z: -5.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1008471172 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 3194945163451389872, guid: 476ab1527247a427dbf18b3f4fd7df3b,
@@ -4078,3 +4124,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba1e96579674844e781a5c5a1de13a0b, type: 3}
+--- !u!95 &5551905074506175024 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5551905075524458790, guid: ba1e96579674844e781a5c5a1de13a0b,
+    type: 3}
+  m_PrefabInstance: {fileID: 5551905074506175023}
+  m_PrefabAsset: {fileID: 0}
