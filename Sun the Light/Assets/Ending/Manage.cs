@@ -18,18 +18,28 @@ public class Manage : MonoBehaviour
     public GameObject wind;
     public GameObject amount;
 
+    public GameObject text1;
+    public GameObject text2;
+    public GameObject text3;
 
-
-    
+    //여기
+    public GameObject GameOverMsg;
+    public GameObject RestartBtn;
 
     int count = 0;
-
+    int msgCount=0;
     void Update()
     {
         rain.GetComponent<Slider>().value += 0.05f;
         cloud.GetComponent<Slider>().value += 0.05f;
         wind.GetComponent<Slider>().value += 0.05f;
         amount.GetComponent<Slider>().value += 0.05f;
+
+        if (RestartBtn.active && msgCount == 0)//켜져있으면(버튼 켜져있으면)
+        {
+            GameOverMsg.SetActive(true);
+            msgCount++;
+        }
 
         //번개 하나당 3.336초씩(3.4씩더하자)
         time += Time.deltaTime;//1초에 60프레임    
@@ -64,10 +74,21 @@ public class Manage : MonoBehaviour
             bolt3.gameObject.SetActive(false);//세번쨰번개 끈다
             count++;
         }
-               
+        
         //레벨 1에서 게임오버 할 떄 메세지 활성화 할 것(레벨따라 메세지 다르게)
-         
-       
+        if(PlayerPrefs.GetInt("ClearStage")==1)
+        {
+            text1.SetActive(true);
+        }
+        else if (PlayerPrefs.GetInt("ClearStage")==2)
+        {
+            text2.SetActive(true);
+        }
+        else if (PlayerPrefs.GetInt("ClearStage")==3)
+        {
+            text3.SetActive(true);
+        }
+
 
 
     }
