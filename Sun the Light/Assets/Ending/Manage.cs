@@ -18,17 +18,12 @@ public class Manage : MonoBehaviour
     public GameObject wind;
     public GameObject amount;
 
-    //오브젝트->컴포넌트->메소드순으로 접근해보기
-    //public GameObject black;
-    //FadeScript black;
+
+
+    
 
     int count = 0;
 
-    private void Start()
-    {
-        //black = new FadeScript();
-    }
-    // Update is called once per frame
     void Update()
     {
         rain.GetComponent<Slider>().value += 0.05f;
@@ -69,18 +64,8 @@ public class Manage : MonoBehaviour
             bolt3.gameObject.SetActive(false);//세번쨰번개 끈다
             count++;
         }
-        //안되는부분
-        /*        NullReferenceException
-        UnityEngine.MonoBehaviour.StartCoroutine(System.Collections.IEnumerator routine)(at<f53c831f77784ef08ef348217b5117fa>:0)
-        FadeScript.Fade()(at Assets / Ending / FadeScript.cs:17)
-        Thunder.Update()(at Assets / Ending / Thunder.cs:61)*/
-        if (time > 13.2f && count == 6)
-        {
-            //black.Fade();
-            count++;
-        }
-        
-        //레벨 1에서 게임오버 할 떄 메세지
+               
+        //레벨 1에서 게임오버 할 떄 메세지 활성화 할 것(레벨따라 메세지 다르게)
          
        
 
