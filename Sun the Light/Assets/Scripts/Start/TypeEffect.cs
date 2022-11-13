@@ -8,7 +8,7 @@ public class TypeEffect : MonoBehaviour
 {
 
     Text tx;
-    bool done = false;
+    public bool done = false;
     private string Msg = "";
     public GameObject next;
 
@@ -27,13 +27,7 @@ public class TypeEffect : MonoBehaviour
             tx.enabled = false;
             if (next)
                 next.SetActive(true);
-            //끝나면 점수화면으로
-            else
-            {
-                
-                SceneManager.LoadScene("MainGame");
-            }
-            
+            else SceneManager.LoadScene("MainGame");
         }
     }
 
