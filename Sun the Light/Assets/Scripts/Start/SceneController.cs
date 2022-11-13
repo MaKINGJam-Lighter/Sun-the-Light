@@ -45,6 +45,12 @@ public class SceneController : MonoBehaviour
         Invoke("DelayGoOverGame", 1f);
     }
 
+    public void GoClearGame()
+    {
+        fadeInOutPanel.SetBool("isFadeOut", true);
+        Invoke("DelayGoClearGame", 1f);
+    }
+
     public void DelayGoHome()
     {
         SceneManager.LoadScene("Home");
@@ -73,5 +79,10 @@ public class SceneController : MonoBehaviour
     public void DelayGoOverGame()
     {
         SceneManager.LoadScene("OverGame");
+    }
+
+    public void DelayGoClearGame()
+    {
+        SceneManager.LoadScene("ClearGame");
     }
 }

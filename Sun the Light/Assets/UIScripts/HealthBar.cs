@@ -27,7 +27,15 @@ public class HealthBar : MonoBehaviour
                 PlayerPrefs.SetInt("ClearStage", 1);
 
             PlayerPrefs.SetFloat("MaxScore", gameManager.maxScore);
-            sceneController.GoOverGame();
+
+            if (PlayerPrefs.GetInt("ClearStage") == 4)
+            {
+                sceneController.GoClearGame();
+            }
+            else
+            {
+                sceneController.GoOverGame();
+            }
         }
     }
 
