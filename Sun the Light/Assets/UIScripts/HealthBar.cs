@@ -13,11 +13,6 @@ public class HealthBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //데미지입으면(if문에 넣기), 지금은 임의로 a키로 테스트
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            healthBar.value -= damage;
-        }
         //안된다.
         //체력 다 깎이면 남은 체력 안 보이게
         if (healthBar.value <= 0)

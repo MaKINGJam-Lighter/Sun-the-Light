@@ -17,8 +17,15 @@ public class ScoreAndHp : MonoBehaviour
     private float hp;
 
     [SerializeField]
+    private int life;
+
+    [SerializeField]
     private AudioClip destroyClip;
 
+    [SerializeField]
+    private AudioClip hurtClip;
+
+    private AudioSource playerEffectAudioSource;
     private AudioSource effectAudioSource;
 
     public float GetScore()
@@ -33,7 +40,7 @@ public class ScoreAndHp : MonoBehaviour
 
     private void Start()
     {
-        effectAudioSource = GameObject.Find("Effect Audio Source").GetComponent<AudioSource>();
+        effectAudioSource = GetComponent<AudioSource>();
         healthBar = GameObject.FindWithTag("HP").GetComponent<Slider>();
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
@@ -50,14 +57,24 @@ public class ScoreAndHp : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
+            playerEffectAudioSource = collision.GetComponent<AudioSource>();
             DestroyObstacle();
             DecreaseHP();
         }
         else if(collision.tag == "Skill")
         {
-            DestroyObstacle();
-            IncreaseScore();
-            Destroy(collision.gameObject);
+            life -= 1;
+            if (life == 0)
+            {
+                DestroyObstacle();
+                IncreaseScore();
+                Destroy(collision.gameObject);
+            }
+            else
+            {
+                effectAudioSource.clip = destroyClip;
+                effectAudioSource.Play();
+            }
         }
     }
 
@@ -70,6 +87,8 @@ public class ScoreAndHp : MonoBehaviour
 
     private void DecreaseHP()
     {
+        playerEffectAudioSource.clip = hurtClip;
+        playerEffectAudioSource.Play();
         healthBar.value -= hp;
     }
 
