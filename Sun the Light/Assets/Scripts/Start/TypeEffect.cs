@@ -27,7 +27,13 @@ public class TypeEffect : MonoBehaviour
             tx.enabled = false;
             if (next)
                 next.SetActive(true);
-            else SceneManager.LoadScene("MainGame");
+            //끝나면 점수화면으로
+            else
+            {
+                
+                SceneManager.LoadScene("MainGame");
+            }
+            
         }
     }
 
