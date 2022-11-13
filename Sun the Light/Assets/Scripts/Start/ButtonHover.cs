@@ -6,28 +6,18 @@ using UnityEngine.UI;
 
 public class ButtonHover : MonoBehaviour
 {
+    public Text btnText;
 
     //마우스포인터가 위로 올라오면
     public void EnterButton()
     {
-        GameObject Button = this.gameObject;
-        if (Button)
-        {
-            Text btnText = Button.GetComponentInChildren<Text>();
-            btnText.fontSize = 60;
-        }
- 
+        btnText.fontSize = 75;
     }
 
     //마우스포인터가 밖으로 나가면
     public void LeaveButton()
     {
-        GameObject Button = this.gameObject;
-        if (Button)
-        {
-            Text btnText = Button.GetComponentInChildren<Text>();
-            btnText.fontSize = 50;
-        }
+        btnText.fontSize = 70;
     }
 
 }
