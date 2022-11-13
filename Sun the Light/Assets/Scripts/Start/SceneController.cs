@@ -41,6 +41,7 @@ public class SceneController : MonoBehaviour
 
     //public void GoEnding()
     //{
+    //  fadeInOutPanel.SetBool("isFadeOut", true);
     //    SceneManager.LoadScene("EndingAnimation");
     //}
 
@@ -61,7 +62,7 @@ public class SceneController : MonoBehaviour
 
     public void DelayGoInfo()
     {
-        SceneManager.LoadScene("Info");
+        SceneManager.LoadScene("GoInfo");
     }
 
     public void DelayGoMainGame()
