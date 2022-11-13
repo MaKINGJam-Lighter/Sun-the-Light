@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Thunder : MonoBehaviour
+public class Manage : MonoBehaviour
 {
     public float time = 0f;
     public GameObject bolt1;
@@ -79,11 +79,11 @@ public class Thunder : MonoBehaviour
             //black.Fade();
             count++;
         }
-        //14.2초지나면 대본띄운다.
-        if (time > 14.2f && count == 7)
-        {
-            paper.gameObject.SetActive(true);
-            text.gameObject.SetActive(true);
-        }
+        
+        //레벨 1에서 게임오버 할 떄 메세지
+         
+       
+
+
     }
 }
