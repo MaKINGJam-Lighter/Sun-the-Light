@@ -77,8 +77,8 @@ public class Player : MonoBehaviour
         else //curTime <= 0
         {
             curTime = 13.0f;
-            isFire = true;
             skillCoolImg.fillAmount = 1.0f;
+            isFire = true;
         }
     }
 

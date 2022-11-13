@@ -24,6 +24,9 @@ public class CityTrigger : MonoBehaviour
     [SerializeField]
     private AudioClip hurtClip;
 
+    [SerializeField]
+    private GameObject cityFire;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,6 +57,8 @@ public class CityTrigger : MonoBehaviour
                 }
                 else if (!isSoundPlay && GameObject.FindWithTag("Player").transform.position.y < 0)
                 {
+                    cityFire.SetActive(true);
+                    cityFire.transform.position = new Vector3(GameObject.FindWithTag("Player").transform.position.x, -4.2f, 0);
                     cityAudioSource.Play();
                     isSoundPlay = true;
                 }
@@ -74,6 +79,7 @@ public class CityTrigger : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            cityFire.SetActive(false);
             isSoundPlay = false;
             isStart = false;
             timer = 0;
