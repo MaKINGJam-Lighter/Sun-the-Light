@@ -19,7 +19,7 @@ public class Thunder : MonoBehaviour
     public GameObject amount;
 
     //오브젝트->컴포넌트->메소드순으로 접근해보기
-    public GameObject black;
+    //public GameObject black;
     //FadeScript black;
 
     int count = 0;
@@ -38,8 +38,6 @@ public class Thunder : MonoBehaviour
 
         //번개 하나당 3.336초씩(3.4씩더하자)
         time += Time.deltaTime;//1초에 60프레임    
-
-
 
         if (time > 1.0f && count == 0)//1초 지나면
         {
