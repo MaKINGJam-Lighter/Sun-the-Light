@@ -72,8 +72,11 @@ public class ScoreAndHp : MonoBehaviour
             }
             else
             {
-                effectAudioSource.clip = destroyClip;
-                effectAudioSource.Play();
+                if (destroyClip != null)
+                {
+                    effectAudioSource.clip = destroyClip;
+                    effectAudioSource.Play();
+                }
             }
         }
     }
