@@ -5,19 +5,11 @@ using UnityEngine;
 public class Fire : MonoBehaviour
 {
     public int dmg;
-    //public bool isRotate;
-
-    void Update()
-    {
-        //if (isRotate)
-       //{
-            //transform.Rotate(Vector3.forward * 10);
-       // }
-    }
+   
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Border")
+        if(collision.gameObject.tag == "Border" || collision.gameObject.tag=="Obstacle")
         {
             Destroy(gameObject);
         }
