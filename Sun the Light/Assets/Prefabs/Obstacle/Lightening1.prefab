@@ -268,7 +268,9 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   score: 0
   hp: 20
+  life: 0
   destroyClip: {fileID: 0}
+  hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
 --- !u!95 &1514975331272814113
 Animator:
   serializedVersion: 3
