@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3092741579501041883}
   - component: {fileID: 6001226928902408198}
   - component: {fileID: 9101306442045611494}
+  - component: {fileID: 1755711391989931693}
   m_Layer: 0
   m_Name: Cloud2
   m_TagString: Obstacle
@@ -112,9 +113,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65588d091445b40e6ae67ddc3a4a6cbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  UIScore: {fileID: 0}
+  UIMaxScore: {fileID: 0}
+  gameManager: {fileID: 0}
   score: 500
   hp: 10
-  effectAudioSource: {fileID: 0}
   destroyClip: {fileID: 8300000, guid: 3b88468a119494313a7f856e6a046ba0, type: 3}
 --- !u!95 &9101306442045611494
 Animator:
@@ -135,6 +139,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!50 &1755711391989931693
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3229429107960255220}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &3597525510079925012
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,7 +172,7 @@ GameObject:
   - component: {fileID: 4758492315982222656}
   m_Layer: 0
   m_Name: Cloud2
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -196,6 +221,7 @@ GameObject:
   - component: {fileID: 3122305932462798684}
   - component: {fileID: 8913915872265539989}
   - component: {fileID: 8114066265664754393}
+  - component: {fileID: 7260423539708142794}
   m_Layer: 0
   m_Name: Cloud1
   m_TagString: Obstacle
@@ -295,9 +321,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65588d091445b40e6ae67ddc3a4a6cbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  UIScore: {fileID: 0}
+  UIMaxScore: {fileID: 0}
+  gameManager: {fileID: 0}
   score: 500
   hp: 10
-  effectAudioSource: {fileID: 0}
   destroyClip: {fileID: 8300000, guid: 3b88468a119494313a7f856e6a046ba0, type: 3}
 --- !u!95 &8114066265664754393
 Animator:
@@ -318,3 +347,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!50 &7260423539708142794
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4724740612771191527}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

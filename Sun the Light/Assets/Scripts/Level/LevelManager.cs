@@ -46,6 +46,6 @@ public class LevelManager : MonoBehaviour
 
     private void GetScore()
     {
-
+        score = GameObject.Find("GameManager").GetComponent<GameManager>().score;
     }
 }
