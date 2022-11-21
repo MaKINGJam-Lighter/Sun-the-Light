@@ -8,9 +8,11 @@ public class Score : MonoBehaviour
     public Text UIScore;
     public Text UIMaxScore;
     public GameManager gameManager;
-    private void Start()
+
+    void Start()
     {
-        
+        UIMaxScore.text = PlayerPrefs.GetString("MaxScore");
+        Debug.Log("Get MaxScore: " + PlayerPrefs.GetString("MaxScore"));
     }
     // Update is called once per frame
     void Update()
