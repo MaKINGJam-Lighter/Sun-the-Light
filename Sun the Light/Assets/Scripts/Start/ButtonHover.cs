@@ -11,13 +11,13 @@ public class ButtonHover : MonoBehaviour
     //마우스포인터가 위로 올라오면
     public void EnterButton()
     {
-        btnText.fontSize = 75;
+        btnText.fontSize += 10;
     }
 
     //마우스포인터가 밖으로 나가면
     public void LeaveButton()
     {
-        btnText.fontSize = 70;
+        btnText.fontSize -= 10;
     }
 
 }
