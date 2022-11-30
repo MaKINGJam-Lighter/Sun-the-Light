@@ -12,6 +12,9 @@ public class TypingEffect : MonoBehaviour
     private string Msg = "";
     public GameObject next;
     public GameObject restartBtn;
+    public GameObject paper;
+    public GameObject toMain;
+
     //텍스트 가져오기
     //public GameObject gameOverMsg;
 
@@ -30,10 +33,15 @@ public class TypingEffect : MonoBehaviour
             tx.enabled = false;
             if (next)
                 next.SetActive(true);
-            else//타이핑 끝나면 리스타트버튼 활성화
+            else//타이핑 끝나면 리스타트버튼 활성화, paper비활성화
             {
+                //리스타트버튼 부르고
                 restartBtn.SetActive(true);
-                //gameOverMsg.SetActive(true);
+                //메인으로 버튼도 부르고
+                toMain.SetActive(true);
+                //이 오브젝트는 비활성화 바이..
+                paper.SetActive(false);
+
             }
         }
     }
