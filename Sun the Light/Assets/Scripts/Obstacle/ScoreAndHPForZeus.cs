@@ -54,7 +54,10 @@ public class ScoreAndHPForZeus : MonoBehaviour
 
     private void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            DestroyObstacle();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
