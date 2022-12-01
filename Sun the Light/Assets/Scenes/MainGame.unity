@@ -1081,6 +1081,16 @@ PrefabInstance:
       objectReference: {fileID: 1897312813}
     - target: {fileID: 4903466762141444438, guid: 72cc25ed8e05d430ea9a97d79f700851,
         type: 3}
+      propertyPath: BGMAudioSource
+      value: 
+      objectReference: {fileID: 1479915451}
+    - target: {fileID: 4903466762141444438, guid: 72cc25ed8e05d430ea9a97d79f700851,
+        type: 3}
+      propertyPath: BGMClips.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4903466762141444438, guid: 72cc25ed8e05d430ea9a97d79f700851,
+        type: 3}
       propertyPath: levels.Array.data[0]
       value: 
       objectReference: {fileID: 1843785650}
@@ -1094,6 +1104,21 @@ PrefabInstance:
       propertyPath: levels.Array.data[2]
       value: 
       objectReference: {fileID: 1843785648}
+    - target: {fileID: 4903466762141444438, guid: 72cc25ed8e05d430ea9a97d79f700851,
+        type: 3}
+      propertyPath: BGMClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1c3cb984b9c174452a9e26a098f63a4f, type: 3}
+    - target: {fileID: 4903466762141444438, guid: 72cc25ed8e05d430ea9a97d79f700851,
+        type: 3}
+      propertyPath: BGMClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5c21047055b57411ea54011ca465192a, type: 3}
+    - target: {fileID: 4903466762141444438, guid: 72cc25ed8e05d430ea9a97d79f700851,
+        type: 3}
+      propertyPath: BGMClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5ab993d41ce054fe08d383251a01d8ee, type: 3}
     - target: {fileID: 4903466762141444439, guid: 72cc25ed8e05d430ea9a97d79f700851,
         type: 3}
       propertyPath: m_Name
@@ -1300,6 +1325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   maxScore: 0
+  isZeusKilled: 0
 --- !u!114 &804690581
 MonoBehaviour:
   m_ObjectHideFlags: 0
