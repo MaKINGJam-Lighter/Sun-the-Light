@@ -172,6 +172,7 @@ GameObject:
   - component: {fileID: 6901349262104686208}
   - component: {fileID: 7048570541325088071}
   - component: {fileID: 1412157258}
+  - component: {fileID: 7599940305661026530}
   m_Layer: 0
   m_Name: Horse
   m_TagString: Untagged
@@ -269,6 +270,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!95 &7599940305661026530
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352947896871682873}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 61044863cbf7d764da265d42b6f96be9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2313464303970899534
 GameObject:
   m_ObjectHideFlags: 0

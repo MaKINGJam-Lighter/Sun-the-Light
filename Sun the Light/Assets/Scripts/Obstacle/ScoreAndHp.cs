@@ -11,6 +11,9 @@ public class ScoreAndHp : MonoBehaviour
     public GameManager gameManager;
 
     [SerializeField]
+    private GameObject wine;
+
+    [SerializeField]
     private float score;
 
     [SerializeField]
@@ -68,7 +71,9 @@ public class ScoreAndHp : MonoBehaviour
             {
                 DestroyObstacle();
                 IncreaseScore();
-                Destroy(collision.gameObject);
+                Destroy(collision.gameObject);  //스킬 destroy
+                Debug.Log("장애물 제거");
+                Wine();
             }
             else
             {
@@ -78,6 +83,16 @@ public class ScoreAndHp : MonoBehaviour
                     effectAudioSource.Play();
                 }
             }
+        }
+    }
+
+    private void Wine()
+    {
+        float ran = Random.Range(0, 99);  //99포함
+        Debug.Log(ran);
+        if (ran < 7)  //7프로의 확률
+        {  //포도주 아이템 생성
+           Instantiate(wine, gameObject.transform.position, Quaternion.identity);
         }
     }
 
