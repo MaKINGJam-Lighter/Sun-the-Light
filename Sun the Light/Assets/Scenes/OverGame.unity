@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -208,8 +208,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 2
   m_Text: "\uBB34\uD131\uB300\uACE0 \uB9DE\uC124 \uBB38\uC81C\uAC00 \uC544\uB2C8\uB2E4.
-    \uC6B0\uC120\n \uD5E4\uC2A4\uD398\uB9AC\uB370\uC2A4\uC758 \uB545\uC73C\uB85C
-    \uB3CC\uC544\uAC00 \uCC9C\uCC9C\uD788\n \uC0DD\uAC01\uD574\uBCF4\uC790.                   "
+    \uC6B0\uC120 \uD5E4\uC2A4\uD398\uB9AC\uB370\uC2A4\uC758 \n\uB545\uC73C\uB85C
+    \uB3CC\uC544\uAC00 \uCC9C\uCC9C\uD788 \uC0DD\uAC01\uD574\uBCF4\uC790.                   "
 --- !u!222 &8662176
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2025,7 +2025,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 2
   m_Text: "\uD0DC\uC591\uC774 \uC81C\uC790\uB9AC\uB97C \uCC3E\uC544 \uB3CC\uC544\uC624\uAE30\uB97C
-    \uAE30\uB2E4\uB9AC\uB294\n \uC218 \uBC16\uC5D0.                   \n                                 "
+    \uAE30\uB2E4\uB9AC\uB294 \uC218 \uBC16\uC5D0.\n                                                    "
 --- !u!222 &406137641
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2863,10 +2863,17 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 2
   m_Text: "\uBB34\uC5B8\uAC00 \uB2E8\uB2E8\uD788 \uC798\uBABB\uB418\uC5C8\uB2E4.
+<<<<<<< HEAD
+    \uB85C\uB3C4\uC2A4\uB97C \uC4F8\uC5B4\uBC84\uB9AC\uACE0\uB3C4 \n\uB0A8\uC744
+    \uADDC\uBAA8\uC758 \uD3ED\uD48D\uC6B0\uB77C\uB2C8, \uC81C\uC6B0\uC2A4\uB294 \uB3C4\uB300\uCCB4
+    \uC5B4\uB514\uC5D0\uC11C \uB610 \n\uBB34\uC2A8 \uC9D3\uC744 \uD558\uACE0 \uC788\uB294
+    \uAC74\uC9C0!      "
+=======
     \uB85C\uB3C4\uC2A4\uB97C\n \uC4F8\uC5B4\uBC84\uB9AC\uACE0\uB3C4 \uB0A8\uC744
     \uADDC\uBAA8\uC758 \uD3ED\uD48D\uC6B0\uB77C\uB2C8,\n \uC81C\uC6B0\uC2A4\uB294
     \uB3C4\uB300\uCCB4 \uC5B4\uB514\uC5D0\uC11C \uB610 \uBB34\uC2A8 \uC9D3\uC744\n\uD558\uACE0
     \uC788\uB294 \uAC74\uC9C0!      "
+>>>>>>> 게임오버화면
 --- !u!222 &641617780
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5540,8 +5547,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 2
   m_Text: "\uBE44\uB294 \uADF8\uCE60 \uC904\uC744 \uBAA8\uB974\uACE0 \uBC14\uB78C\uC740
-    \uC810\uC810 \uB354\n \uAC70\uC138\uC9C4\uB2E4. \uD587\uBE5B\uC774 \uC5C6\uC5B4
-    \uC55E\uC774 \uBCF4\uC774\uC9C0 \uC54A\uC73C\uB2C8\n \uBCC4\uB2E4\uB978 \uBC29\uB3C4\uAC00
+    \uC810\uC810 \uB354 \uAC70\uC138\uC9C4\uB2E4.\n\uD587\uBE5B\uC774 \uC5C6\uC5B4
+    \uC55E\uC774 \uBCF4\uC774\uC9C0 \uC54A\uC73C\uB2C8 \uBCC4\uB2E4\uB978 \uBC29\uB3C4\uAC00
     \uC5C6\uB2E4.                   \n                                 "
 --- !u!222 &1054444089
 CanvasRenderer:
@@ -6101,8 +6108,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 2
   m_Text: "\uBE4C\uC5B4\uBA39\uC744 \uC81C\uC6B0\uC2A4, \uAE30\uC5B4\uC774 \uB098\uB97C
-    \uBAB0\uC544\uB0B4\uC2DC\uACA0\uB2E4. \uC774\uB7F0 \uBD88\uBA85\uC608\uB97C \uC548\uACE0
-    \uB5A0\uB0A0 \uC218\uB294 \uC5C6\uB294\uB370...                   "
+    \uBAB0\uC544\uB0B4\uC2DC\uACA0\uB2E4! \n\uC774\uB7F0 \uBD88\uBA85\uC608\uB97C
+    \uC548\uACE0 \uB5A0\uB0A0 \uC218\uB294 \uC5C6\uB294\uB370...                   "
 --- !u!222 &1131945414
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8326,8 +8333,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 2
   m_Text: "\uBAA8\uB4E0 \uAC83\uC774 \uC644\uBCBD\uD558\uAC8C \uB4E4\uC5B4\uB9DE\uB294\uB2E4.
-    \uD55C \uC21C\uAC04\uC5D0\n \uC0AC\uB77C\uC9C4 \uD0DC\uC591, \uD615\uC6A9\uD560
-    \uC218 \uC5C6\uB294 \uD3ED\uD48D, \uADF8\uB9AC\uACE0\n \uB54C\uB9C8\uCE68 \uC7A5\uC131\uD55C
+    \n\uD55C \uC21C\uAC04\uC5D0 \uC0AC\uB77C\uC9C4 \uD0DC\uC591, \uD615\uC6A9\uD560
+    \uC218 \uC5C6\uB294 \uD3ED\uD48D, \n\uADF8\uB9AC\uACE0 \uB54C\uB9C8\uCE68 \uC7A5\uC131\uD55C
     \uC544\uD3F4\uB860.      "
 --- !u!222 &1820550103
 CanvasRenderer:

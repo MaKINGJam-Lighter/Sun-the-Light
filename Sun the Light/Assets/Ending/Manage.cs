@@ -35,7 +35,7 @@ public class Manage : MonoBehaviour
         wind.GetComponent<Slider>().value += 0.05f;
         amount.GetComponent<Slider>().value += 0.05f;
 
-        if (RestartBtn.active && msgCount == 0)//켜져있으면(버튼 켜져있으면)
+        if (RestartBtn.activeSelf==true && msgCount == 0)//켜져있으면(버튼 켜져있으면)
         {
             GameOverMsg.SetActive(true);
             msgCount++;
