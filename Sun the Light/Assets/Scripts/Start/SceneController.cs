@@ -51,13 +51,6 @@ public class SceneController : MonoBehaviour
         Invoke("DelayGoClearGame", 1f);
     }
 
-    public void GoSoundControl()
-    {
-        fadeInOutPanel.SetBool("isFadeOut", true);
-        Invoke("DelayGoSoundControl", 1f);
-    }
-
-
     public void DelayGoHome()
     {
         SceneManager.LoadScene("Home");
@@ -91,10 +84,5 @@ public class SceneController : MonoBehaviour
     public void DelayGoClearGame()
     {
         SceneManager.LoadScene("ClearGame");
-    }
-
-    public void DelayGoSoundControl()
-    {
-        SceneManager.LoadScene("SoundControl");
     }
 }
