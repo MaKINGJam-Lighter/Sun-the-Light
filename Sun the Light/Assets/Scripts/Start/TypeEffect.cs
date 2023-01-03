@@ -8,13 +8,13 @@ public class TypeEffect : MonoBehaviour
 {
     int i = 1;
     Text tx;
-    bool done = false;
-    bool 강제done = false;
+    public bool done = false;
+    public bool 강제done = false;
     private string Msg = "";
     public GameObject next;
-    public GameObject restartBtn;
+    //public GameObject restartBtn;
     public GameObject paper;
-    public GameObject toMain;
+    //public GameObject toMain;
 
     //텍스트 가져오기
     //public GameObject gameOverMsg;
@@ -46,14 +46,10 @@ public class TypeEffect : MonoBehaviour
             tx.enabled = false;//현재 텍스트 비활성화
             if (next)//다음 텍스트가 있으면
                 next.SetActive(true);//다음 텍스트를 활성화
-            else//타이핑 끝나면 리스타트버튼 활성화, paper비활성화
-            {
-                //리스타트버튼 부르고
-                restartBtn.SetActive(true);
-                //메인으로 버튼도 부르고
-                toMain.SetActive(true);
+            else{
                 //이 오브젝트는 비활성화 바이..
                 paper.SetActive(false);
+                SceneManager.LoadScene("MainGame");
             }
         }
     }
@@ -68,12 +64,9 @@ public class TypeEffect : MonoBehaviour
                 next.SetActive(true);//다음 텍스트를 활성화
             else//타이핑 끝나면 리스타트버튼 활성화, paper비활성화
             {
-                //리스타트버튼 부르고
-                restartBtn.SetActive(true);
-                //메인으로 버튼도 부르고
-                toMain.SetActive(true);
                 //이 오브젝트는 비활성화 바이..
                 paper.SetActive(false);
+                SceneManager.LoadScene("MainGame");
             }
         }
     }
