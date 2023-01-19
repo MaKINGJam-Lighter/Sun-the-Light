@@ -20,8 +20,17 @@ public class wine : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            //IncreaseHP();
+            //와인 삭제
             Destroy(gameObject);
+            //IncreaseHP
+            IncreaseHP();
+
         }
+    }
+
+    private void IncreaseHP()
+    {
+        //playerEffectAudioSource.Play();
+        healthBar.value += hp;
     }
 }

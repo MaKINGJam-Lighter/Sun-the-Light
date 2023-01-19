@@ -42,7 +42,7 @@ public class LevelManager : MonoBehaviour
     {
         GetScore();
 
-        if(score >= 30000 || Input.GetKeyDown(KeyCode.Alpha2))
+        if (score >= 30000 || Input.GetKeyDown(KeyCode.Alpha2))
         {
             levels[2].SetLevel();
             if (once)
@@ -55,7 +55,7 @@ public class LevelManager : MonoBehaviour
                 BGMAudioSource.Play();
             }
         }
-        else if(score >= 10000 || Input.GetKeyDown(KeyCode.Alpha1))
+        else if (score >= 10000 || Input.GetKeyDown(KeyCode.Alpha1))
         {
             levels[1].SetLevel();
             if (once2)
