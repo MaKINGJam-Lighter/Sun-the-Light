@@ -22,6 +22,15 @@ public class wine : MonoBehaviour
         {
             //IncreaseHP();
             Destroy(gameObject);
+            //IncreaseHP
+            IncreaseHP();
+
         }
+    }
+
+    private void IncreaseHP()
+    {
+        //playerEffectAudioSource.Play();
+        //healthBar.value += hp;
     }
 }
