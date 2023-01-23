@@ -2762,10 +2762,23 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 2
   m_Text: "\uBB34\uC5B8\uAC00 \uB2E8\uB2E8\uD788 \uC798\uBABB\uB418\uC5C8\uB2E4.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> parent of cc1750a... Revert "Merge branch 'main2' into 게임오버화면"
     \uB85C\uB3C4\uC2A4\uB97C \uC4F8\uC5B4\uBC84\uB9AC\uACE0\uB3C4 \n\uB0A8\uC744
     \uADDC\uBAA8\uC758 \uD3ED\uD48D\uC6B0\uB77C\uB2C8, \uC81C\uC6B0\uC2A4\uB294 \uB3C4\uB300\uCCB4
     \uC5B4\uB514\uC5D0\uC11C \uB610 \n\uBB34\uC2A8 \uC9D3\uC744 \uD558\uACE0 \uC788\uB294
     \uAC74\uC9C0!      "
+<<<<<<< HEAD
+=======
+=======
+    \uB85C\uB3C4\uC2A4\uB97C\n \uC4F8\uC5B4\uBC84\uB9AC\uACE0\uB3C4 \uB0A8\uC744
+    \uADDC\uBAA8\uC758 \uD3ED\uD48D\uC6B0\uB77C\uB2C8,\n \uC81C\uC6B0\uC2A4\uB294
+    \uB3C4\uB300\uCCB4 \uC5B4\uB514\uC5D0\uC11C \uB610 \uBB34\uC2A8 \uC9D3\uC744\n\uD558\uACE0
+    \uC788\uB294 \uAC74\uC9C0!      "
+>>>>>>> 게임오버화면
+>>>>>>> parent of cc1750a... Revert "Merge branch 'main2' into 게임오버화면"
 --- !u!222 &641617780
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,7 +20,7 @@ public class wine : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            //IncreaseHP();
+            //와인 삭제
             Destroy(gameObject);
             //IncreaseHP
             IncreaseHP();
@@ -31,6 +31,6 @@ public class wine : MonoBehaviour
     private void IncreaseHP()
     {
         //playerEffectAudioSource.Play();
-        //healthBar.value += hp;
+        healthBar.value += hp;
     }
 }

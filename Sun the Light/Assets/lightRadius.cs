@@ -7,7 +7,7 @@ public class lightRadius : MonoBehaviour
 {
     private UnityEngine.Experimental.Rendering.Universal.Light2D sunlight;
     private float radius;
-    //private float time = 0f;
+    private float time = 0f;
 
 
     float pos;

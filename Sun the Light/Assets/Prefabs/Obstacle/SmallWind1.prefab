@@ -137,7 +137,6 @@ MonoBehaviour:
   UIScore: {fileID: 0}
   UIMaxScore: {fileID: 0}
   gameManager: {fileID: 0}
-  wine: {fileID: 6024001666142596819, guid: ac73351046dffa54080b990da0430da4, type: 3}
   score: 100
   hp: 2
   life: 1
@@ -397,7 +396,6 @@ MonoBehaviour:
   UIScore: {fileID: 0}
   UIMaxScore: {fileID: 0}
   gameManager: {fileID: 0}
-  wine: {fileID: 6024001666142596819, guid: ac73351046dffa54080b990da0430da4, type: 3}
   score: 100
   hp: 2
   life: 1
@@ -708,7 +706,6 @@ MonoBehaviour:
   UIScore: {fileID: 0}
   UIMaxScore: {fileID: 0}
   gameManager: {fileID: 0}
-  wine: {fileID: 6024001666142596819, guid: ac73351046dffa54080b990da0430da4, type: 3}
   score: 100
   hp: 2
   life: 1
@@ -968,7 +965,6 @@ MonoBehaviour:
   UIScore: {fileID: 0}
   UIMaxScore: {fileID: 0}
   gameManager: {fileID: 0}
-  wine: {fileID: 6024001666142596819, guid: ac73351046dffa54080b990da0430da4, type: 3}
   score: 100
   hp: 2
   life: 1
@@ -1228,7 +1224,6 @@ MonoBehaviour:
   UIScore: {fileID: 0}
   UIMaxScore: {fileID: 0}
   gameManager: {fileID: 0}
-  wine: {fileID: 6024001666142596819, guid: ac73351046dffa54080b990da0430da4, type: 3}
   score: 100
   hp: 2
   life: 1
