@@ -279,7 +279,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   done: 0
+  "\uAC15\uC81Cdone": 0
   next: {fileID: 0}
+  paper: {fileID: 1921243550}
 --- !u!114 &50733402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -488,7 +490,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   done: 0
+  "\uAC15\uC81Cdone": 0
   next: {fileID: 418605996}
+  paper: {fileID: 0}
 --- !u!114 &337895843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -626,7 +630,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   done: 0
+  "\uAC15\uC81Cdone": 0
   next: {fileID: 1591900406}
+  paper: {fileID: 0}
 --- !u!114 &418606000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -972,7 +978,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   done: 0
+  "\uAC15\uC81Cdone": 0
   next: {fileID: 2020477676}
+  paper: {fileID: 0}
 --- !u!1001 &819713119
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1149,7 +1157,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   done: 0
+  "\uAC15\uC81Cdone": 0
   next: {fileID: 1527092143}
+  paper: {fileID: 0}
 --- !u!114 &894944292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1576,7 +1586,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   done: 0
+  "\uAC15\uC81Cdone": 0
   next: {fileID: 50733398}
+  paper: {fileID: 0}
 --- !u!114 &1527092147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1672,7 +1684,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   done: 0
+  "\uAC15\uC81Cdone": 0
   next: {fileID: 894944288}
+  paper: {fileID: 0}
 --- !u!114 &1591900410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1896,7 +1910,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   done: 0
+  "\uAC15\uC81Cdone": 0
   next: {fileID: 337895840}
+  paper: {fileID: 0}
 --- !u!114 &1690805296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2168,7 +2184,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   done: 0
+  "\uAC15\uC81Cdone": 0
   next: {fileID: 1690805293}
+  paper: {fileID: 0}
 --- !u!114 &1924959263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2265,7 +2283,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   done: 0
+  "\uAC15\uC81Cdone": 0
   next: {fileID: 1924959259}
+  paper: {fileID: 0}
 --- !u!114 &2020477680
 MonoBehaviour:
   m_ObjectHideFlags: 0
