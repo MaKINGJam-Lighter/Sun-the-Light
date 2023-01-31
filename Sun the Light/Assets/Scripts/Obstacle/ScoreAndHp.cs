@@ -11,6 +11,9 @@ public class ScoreAndHp : MonoBehaviour
     public GameManager gameManager;
 
     [SerializeField]
+    public GameObject wine;
+
+    [SerializeField]
     private float score;
 
     [SerializeField]
@@ -24,6 +27,10 @@ public class ScoreAndHp : MonoBehaviour
 
     [SerializeField]
     private AudioClip hurtClip;
+
+    //[SerializeField]
+    //private Transform parent;
+    
 
     private AudioSource playerEffectAudioSource;
     private AudioSource effectAudioSource;
@@ -66,6 +73,7 @@ public class ScoreAndHp : MonoBehaviour
                 DestroyObstacle();
                 IncreaseScore();
                 Destroy(collision.gameObject);
+                Wine();
             }
             else
             {
@@ -75,6 +83,18 @@ public class ScoreAndHp : MonoBehaviour
                     effectAudioSource.Play();
                 }
             }
+        }
+    }
+
+    public void Wine()
+    {
+        float ran = Random.Range(0, 99);
+        Debug.Log(ran);
+        if(ran<7)
+        {
+            //Instantiate(wine);
+            Instantiate(wine, gameObject.transform.position, Quaternion.identity);
+            //wine.transform.SetParent(parent.transform, false);
         }
     }
 

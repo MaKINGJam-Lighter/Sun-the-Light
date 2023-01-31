@@ -137,11 +137,13 @@ MonoBehaviour:
   UIScore: {fileID: 0}
   UIMaxScore: {fileID: 0}
   gameManager: {fileID: 0}
+  wine: {fileID: 8527877785614423500, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
   score: 300
   hp: 5
   life: 2
   destroyClip: {fileID: 8300000, guid: a2a2327ffc191447d8338e32beb2b1a6, type: 3}
   hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
+  parent: {fileID: 3746565080934672470}
 --- !u!50 &4015824517146009973
 Rigidbody2D:
   serializedVersion: 4
@@ -446,11 +448,13 @@ MonoBehaviour:
   UIScore: {fileID: 0}
   UIMaxScore: {fileID: 0}
   gameManager: {fileID: 0}
+  wine: {fileID: 8527877785614423500, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
   score: 300
   hp: 5
   life: 2
   destroyClip: {fileID: 8300000, guid: a2a2327ffc191447d8338e32beb2b1a6, type: 3}
   hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
+  parent: {fileID: 5650477830354325274}
 --- !u!50 &7810766510203533983
 Rigidbody2D:
   serializedVersion: 4
@@ -705,11 +709,13 @@ MonoBehaviour:
   UIScore: {fileID: 0}
   UIMaxScore: {fileID: 0}
   gameManager: {fileID: 0}
+  wine: {fileID: 8527877785614423500, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
   score: 300
   hp: 5
   life: 2
   destroyClip: {fileID: 8300000, guid: a2a2327ffc191447d8338e32beb2b1a6, type: 3}
   hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
+  parent: {fileID: 6289425838539325658}
 --- !u!50 &5688525814225822658
 Rigidbody2D:
   serializedVersion: 4
@@ -964,11 +970,13 @@ MonoBehaviour:
   UIScore: {fileID: 0}
   UIMaxScore: {fileID: 0}
   gameManager: {fileID: 0}
+  wine: {fileID: 8527877785614423500, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
   score: 300
   hp: 5
   life: 2
   destroyClip: {fileID: 8300000, guid: a2a2327ffc191447d8338e32beb2b1a6, type: 3}
   hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
+  parent: {fileID: 9143533164907808857}
 --- !u!50 &6482637539689579710
 Rigidbody2D:
   serializedVersion: 4
