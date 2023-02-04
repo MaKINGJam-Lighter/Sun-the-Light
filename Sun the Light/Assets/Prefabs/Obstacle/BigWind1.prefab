@@ -133,7 +133,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65588d091445b40e6ae67ddc3a4a6cbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
   UIScore: {fileID: 0}
   UIMaxScore: {fileID: 0}
   gameManager: {fileID: 0}
@@ -143,7 +142,7 @@ MonoBehaviour:
   life: 2
   destroyClip: {fileID: 8300000, guid: a2a2327ffc191447d8338e32beb2b1a6, type: 3}
   hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
-  parent: {fileID: 3746565080934672470}
+  wine: {fileID: 1502205879178094365, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
 --- !u!50 &7523277427160611594
 Rigidbody2D:
   serializedVersion: 4
@@ -443,7 +442,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65588d091445b40e6ae67ddc3a4a6cbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
   UIScore: {fileID: 0}
   UIMaxScore: {fileID: 0}
   gameManager: {fileID: 0}
@@ -453,7 +451,7 @@ MonoBehaviour:
   life: 2
   destroyClip: {fileID: 8300000, guid: a2a2327ffc191447d8338e32beb2b1a6, type: 3}
   hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
-  parent: {fileID: 5650477830354325274}
+  wine: {fileID: 1502205879178094365, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
 --- !u!50 &853428384790846935
 Rigidbody2D:
   serializedVersion: 4
@@ -704,7 +702,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65588d091445b40e6ae67ddc3a4a6cbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
   UIScore: {fileID: 0}
   UIMaxScore: {fileID: 0}
   gameManager: {fileID: 0}
@@ -714,7 +711,7 @@ MonoBehaviour:
   life: 2
   destroyClip: {fileID: 8300000, guid: a2a2327ffc191447d8338e32beb2b1a6, type: 3}
   hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
-  parent: {fileID: 9143533164907808857}
+  wine: {fileID: 1502205879178094365, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
 --- !u!50 &3206876780244703436
 Rigidbody2D:
   serializedVersion: 4
