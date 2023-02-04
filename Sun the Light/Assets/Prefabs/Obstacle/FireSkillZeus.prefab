@@ -224,6 +224,7 @@ MonoBehaviour:
   life: 3
   destroyClip: {fileID: 0}
   hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
+  wine: {fileID: 1502205879178094365, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
 --- !u!95 &4372629905170961361
 Animator:
   serializedVersion: 3

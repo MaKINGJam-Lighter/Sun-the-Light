@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ScoreAndHp : MonoBehaviour
 {
-    public Slider healthBar;
+    private Slider healthBar;
     public Text UIScore;
     public Text UIMaxScore;
     public GameManager gameManager;
@@ -25,8 +25,13 @@ public class ScoreAndHp : MonoBehaviour
     [SerializeField]
     private AudioClip hurtClip;
 
+    [SerializeField]
+    private GameObject wine;
+
     private AudioSource playerEffectAudioSource;
     private AudioSource effectAudioSource;
+
+    private float rand;
 
     public float GetScore()
     {
@@ -47,10 +52,10 @@ public class ScoreAndHp : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            DestroyObstacle();
-        }
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+           // DestroyObstacle();
+        //}
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -69,6 +74,11 @@ public class ScoreAndHp : MonoBehaviour
                 DestroyObstacle();
                 IncreaseScore();
                 Destroy(collision.gameObject);
+                rand = Random.Range(0f, 100f);
+                if (rand <= 7f)  //7프로의 확률
+                {
+                    Instantiate(wine, transform.position, Quaternion.identity);
+                }
             }
             else
             {

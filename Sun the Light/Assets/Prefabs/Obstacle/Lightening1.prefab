@@ -172,7 +172,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5023159269345514163}
   - component: {fileID: 7380927591283669168}
-  - component: {fileID: 4345097153583556263}
+  - component: {fileID: 2608823651643700827}
   - component: {fileID: 1514975331272814113}
   - component: {fileID: 2630068457779410661}
   - component: {fileID: 5185775116900950983}
@@ -244,13 +244,13 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.64}
+  m_Size: {x: 0.4, y: 0.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4345097153583556263
+--- !u!114 &2608823651643700827
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -259,18 +259,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 6970372172069781146}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65588d091445b40e6ae67ddc3a4a6cbd, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f4408c0a3b7aae44a828e111c900bdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
   UIScore: {fileID: 0}
   UIMaxScore: {fileID: 0}
   gameManager: {fileID: 0}
   score: 0
   hp: 20
-  life: 0
-  destroyClip: {fileID: 0}
-  hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
 --- !u!95 &1514975331272814113
 Animator:
   serializedVersion: 3

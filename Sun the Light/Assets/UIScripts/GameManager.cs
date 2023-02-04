@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public float score=0;
     public float maxScore = 0;
     public bool isZeusKilled = false;
+    public bool isApolloKilled = false;
 
     private void Start()
     {

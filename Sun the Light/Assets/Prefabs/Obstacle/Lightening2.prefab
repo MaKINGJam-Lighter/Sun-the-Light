@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 3439407332646587525}
   - component: {fileID: 761373876024259586}
-  - component: {fileID: 663953622527269131}
   - component: {fileID: 2243065853821260772}
   - component: {fileID: 3311645034908727818}
   - component: {fileID: 4590580588225900494}
   - component: {fileID: 2156378322459507957}
   - component: {fileID: 1429347809862119416}
+  - component: {fileID: 6939059769816729722}
   m_Layer: 0
   m_Name: Lightening
   m_TagString: Obstacle
@@ -85,30 +85,9 @@ SpriteRenderer:
   m_Size: {x: 0.64, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &663953622527269131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 806615063404114738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65588d091445b40e6ae67ddc3a4a6cbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  UIScore: {fileID: 0}
-  UIMaxScore: {fileID: 0}
-  gameManager: {fileID: 0}
-  score: 0
-  hp: 20
-  life: 0
-  destroyClip: {fileID: 0}
-  hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
 --- !u!95 &2243065853821260772
 Animator:
   serializedVersion: 3
@@ -300,6 +279,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6939059769816729722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806615063404114738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4408c0a3b7aae44a828e111c900bdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIScore: {fileID: 0}
+  UIMaxScore: {fileID: 0}
+  gameManager: {fileID: 0}
+  score: 0
+  hp: 20
+  life: 0
 --- !u!1 &1169329598091708463
 GameObject:
   m_ObjectHideFlags: 0
