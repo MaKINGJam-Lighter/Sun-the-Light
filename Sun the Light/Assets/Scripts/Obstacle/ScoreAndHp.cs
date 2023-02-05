@@ -29,7 +29,7 @@ public class ScoreAndHp : MonoBehaviour
     private AudioClip hurtClip;
 
     [SerializeField]
-    private GameObject wine;
+    //private GameObject wine;
 
     private AudioSource playerEffectAudioSource;
     private AudioSource effectAudioSource;
