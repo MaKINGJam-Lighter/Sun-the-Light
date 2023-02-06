@@ -5,11 +5,24 @@ using UnityEngine.UI;
 public class SliderScript : MonoBehaviour
 {
     Slider slider;
+    public static float BgmValue=100;
+    public static float EffectValue=100;
 
     // Start is called before the first frame update
     void Start()
     {
-        slider=this.GetComponent<Slider>();    
+        slider=this.GetComponent<Slider>();
+
+
+        if (this.gameObject.name == "BackgroundSlider")
+        {
+            slider.value = BgmValue;
+        }
+        else if (this.gameObject.name == "EffectSlider")
+        {
+            slider.value = EffectValue;
+        }
+
     }
 
     // Update is called once per frame
@@ -22,5 +35,16 @@ public class SliderScript : MonoBehaviour
         else
             this.transform.Find("Fill Area").gameObject.SetActive(true);
 
+
+        if(this.gameObject.name== "BackgroundSlider")
+        {
+            BgmValue = slider.value;
+            //print(BgmValue);
+        }
+        else if(this.gameObject.name == "EffectSlider")
+        {
+            EffectValue = slider.value;
+        }
+        
     }
 }

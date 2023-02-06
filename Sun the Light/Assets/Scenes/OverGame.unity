@@ -1223,10 +1223,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 222849825}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcf0b1fc35fbce54ba32187f2bd0dc13, type: 3}
+  m_Script: {fileID: 11500000, guid: ffa4c517e8b86994ca5260e4e65b92d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isBGM: 1
+  isBgm: 1
   isEffect: 0
 --- !u!1 &224658188
 GameObject:
@@ -2639,10 +2639,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 562972179}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcf0b1fc35fbce54ba32187f2bd0dc13, type: 3}
+  m_Script: {fileID: 11500000, guid: ffa4c517e8b86994ca5260e4e65b92d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isBGM: 0
+  isBgm: 0
   isEffect: 1
 --- !u!1 &566438198
 GameObject:
@@ -4093,10 +4093,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 758807578}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcf0b1fc35fbce54ba32187f2bd0dc13, type: 3}
+  m_Script: {fileID: 11500000, guid: ffa4c517e8b86994ca5260e4e65b92d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isBGM: 0
+  isBgm: 0
   isEffect: 1
 --- !u!1 &777714870
 GameObject:
@@ -4633,10 +4633,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 817282429}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcf0b1fc35fbce54ba32187f2bd0dc13, type: 3}
+  m_Script: {fileID: 11500000, guid: ffa4c517e8b86994ca5260e4e65b92d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isBGM: 0
+  isBgm: 0
   isEffect: 1
 --- !u!1 &819377563
 GameObject:
