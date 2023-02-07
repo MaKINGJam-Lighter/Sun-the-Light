@@ -19,15 +19,19 @@ public class HealthBar : MonoBehaviour
         if (healthBar.value <= 0)
         {
             healthBar.gameObject.SetActive(false);
-            if (gameManager.score >= 30000 && gameManager.isZeusKilled)
+            if (gameManager.isZeusKilled)
+            {
+                PlayerPrefs.SetInt("ClearStage", 5);
+            }
+            else if (gameManager.score >= 7000 && gameManager.isApolloKilled)
             {
                 PlayerPrefs.SetInt("ClearStage", 4);
             }
-            else if (gameManager.score >= 30000)
+            else if (gameManager.score >= 3000 && gameManager.isApolloKilled)
             {
                 PlayerPrefs.SetInt("ClearStage", 3);
             }
-            else if (gameManager.score >= 10000)
+            else if(gameManager.score >= 3000)
             {
                 PlayerPrefs.SetInt("ClearStage", 2);
             }
@@ -38,7 +42,7 @@ public class HealthBar : MonoBehaviour
 
             PlayerPrefs.SetString("MaxScore", gameManager.maxScore.ToString());
 
-            if (PlayerPrefs.GetInt("ClearStage") == 4)
+            if (PlayerPrefs.GetInt("ClearStage") == 5)
             {
                 sceneController.GoClearGame();
             }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScoreAndHPForZeus : MonoBehaviour
+public class ScoreAndHpForApollo : MonoBehaviour
 {
     public Slider healthBar;
     public GameManager gameManager;
@@ -20,17 +20,17 @@ public class ScoreAndHPForZeus : MonoBehaviour
     [SerializeField]
     private float attackPower;
 
-    [SerializeField]
-    private Animator zeusAnimator;
+    //[SerializeField]
+    //private Animator apolloAnimator;
+
+    //[SerializeField]
+    //private AudioClip destroyClip;
+
+    //[SerializeField]
+    //private AudioClip hurtClip;
 
     [SerializeField]
-    private AudioClip destroyClip;
-
-    [SerializeField]
-    private AudioClip hurtClip;
-
-    [SerializeField]
-    private bool isZeus;
+    private bool isApollo;
 
     private AudioSource playerEffectAudioSource;
     private AudioSource effectAudioSource;
@@ -54,7 +54,10 @@ public class ScoreAndHPForZeus : MonoBehaviour
 
     private void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            DestroyObstacle();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -68,17 +71,16 @@ public class ScoreAndHPForZeus : MonoBehaviour
         {
             hpBar.value -= attackPower;
             IncreaseScore();
-            Debug.Log(hpBar.value);
+
             if (hpBar.value == 0)
             {
-                if (isZeus)
+                if (isApollo)
                 {
                     gameManager.score += 1500;
-                    gameManager.isZeusKilled = true;
-                    Debug.Log("isZeusKilled==true");
-                    isZeus = false;
+                    gameManager.isApolloKilled = true;
+                    isApollo = false;
                 }
-                zeusAnimator.SetBool("isDead", true);
+               //zeusAnimator.SetBool("isDead", true);
                 Destroy(collision.gameObject);
                 Invoke("DestroyObstacle", 1f);
             }
@@ -92,7 +94,6 @@ public class ScoreAndHPForZeus : MonoBehaviour
 
     private void DestroyObstacle()
     {
-        Debug.Log("제우스 삭제");
         Destroy(gameObject);
         //effectAudioSource.clip = destroyClip;
         //effectAudioSource.Play();
@@ -100,8 +101,8 @@ public class ScoreAndHPForZeus : MonoBehaviour
 
     private void DecreaseHP()
     {
-        playerEffectAudioSource.clip = hurtClip;
-        playerEffectAudioSource.Play();
+        //playerEffectAudioSource.clip = hurtClip;
+        //playerEffectAudioSource.Play();
         healthBar.value -= hp;
     }
 
