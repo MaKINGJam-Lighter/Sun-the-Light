@@ -377,6 +377,7 @@ GameObject:
   - component: {fileID: 238119120438106485}
   - component: {fileID: 1103565012268986654}
   - component: {fileID: 7212559026866015466}
+  - component: {fileID: 8962348787551851070}
   m_Layer: 0
   m_Name: Zeus
   m_TagString: Untagged
@@ -574,6 +575,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fire_skill: {fileID: 7511446267817272168, guid: 0ba8857304f874781b8ded85a86de040,
     type: 3}
+--- !u!114 &8962348787551851070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4590121098639579455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa4c517e8b86994ca5260e4e65b92d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBgm: 0
+  isEffect: 1
 --- !u!1 &5858645203869207283
 GameObject:
   m_ObjectHideFlags: 0
