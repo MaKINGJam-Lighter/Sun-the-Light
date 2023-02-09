@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine.UI;
+
 public class ScreenShot : MonoBehaviour
 {
     public GameObject pauseImage;
@@ -34,6 +36,7 @@ public class ScreenShot : MonoBehaviour
                     skill.SetActive(false);
                     healthBar.SetActive(false);
                     score.SetActive(false);
+                    pauseImage.GetComponent<Image>().enabled = false;
                 }
                 else
                 {
@@ -42,6 +45,7 @@ public class ScreenShot : MonoBehaviour
                     skill.SetActive(true);
                     healthBar.SetActive(true);
                     score.SetActive(true);
+                    pauseImage.GetComponent<Image>().enabled = true ;
                 }
             }
 

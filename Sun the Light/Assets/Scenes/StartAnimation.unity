@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -538,10 +538,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 2
-  m_Text: "\uC774 \uC138\uC0C1\uC744 \uACE8\uACE0\uB8E8 \uD658\uD558\uAC8C \uBE44\uCD94\uB294
-    \uC77C \uAC19\uC740 \uC544\uC8FC \uC911\uC694\uD55C \n\uC784\uBB34\uB97C \uB9E1\uB2E4
-    \uBCF4\uBA74... \uAC00\uB054... ...... \uC774\uB807\uAC8C \uC878\uC74C\uC774.....\n.
-    .... ..... \uC3DF\uC544......... \uC9C0\uAE30\uB3C4 ..... ... ... ....     "
+  m_Text: "\uC138\uC0C1\uC744 \uACE8\uACE0\uB8E8 \uD658\uD788 \uBE44\uCD94\uB294,
+    \uC544\uC8FC \uC911\uC694\uD55C \uCC45\uC784\uC744 \n\uB9E1\uB2E4\uBCF4\uBA74,,,,
+    \uAC00\uB054,,, \uC774\uB807\uAC8C \uC878\uC74C\uC774\u2026. \uC3DF\uC544\u2026.
+    \n\uC9C0\uAE30\uB3C4\u2026\u2026.    "
 --- !u!222 &337895845
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -701,6 +701,7 @@ GameObject:
   - component: {fileID: 486388597}
   - component: {fileID: 486388600}
   - component: {fileID: 486388601}
+  - component: {fileID: 486388602}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -900,6 +901,20 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &486388602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486388596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa4c517e8b86994ca5260e4e65b92d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBgm: 1
+  isEffect: 0
 --- !u!1 &730127925
 GameObject:
   m_ObjectHideFlags: 0
@@ -970,7 +985,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 2
-  m_Text: "\uB098, \uD0DC\uC591\uC2E0 \uD5EC\uB9AC\uC624\uC2A4.        "
+  m_Text: "\uB098, \uD0DC\uC591\uC2E0 \uD5EC\uB9AC\uC624\uC2A4.    "
 --- !u!222 &730127928
 CanvasRenderer:
   m_ObjectHideFlags: 0
