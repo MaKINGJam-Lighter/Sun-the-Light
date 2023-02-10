@@ -68,13 +68,14 @@ public class ScoreAndHPForZeus : MonoBehaviour
         {
             hpBar.value -= attackPower;
             IncreaseScore();
-
+            Debug.Log(hpBar.value);
             if (hpBar.value == 0)
             {
                 if (isZeus)
                 {
                     gameManager.score += 1500;
                     gameManager.isZeusKilled = true;
+                    Debug.Log("isZeusKilled==true");
                     isZeus = false;
                 }
                 zeusAnimator.SetBool("isDead", true);
@@ -91,6 +92,7 @@ public class ScoreAndHPForZeus : MonoBehaviour
 
     private void DestroyObstacle()
     {
+        Debug.Log("제우스 삭제");
         Destroy(gameObject);
         //effectAudioSource.clip = destroyClip;
         //effectAudioSource.Play();

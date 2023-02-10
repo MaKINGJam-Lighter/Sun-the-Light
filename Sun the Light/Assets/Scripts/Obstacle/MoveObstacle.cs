@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class MoveObstacle : MonoBehaviour
 {
-    [SerializeField]
-    private float angle;
+    //[SerializeField]
+    public float angle;
 
-    [SerializeField]
-    private float speed;
+    //[SerializeField]
+    public float speed;
 
-    [SerializeField]
-    private float direction;
+    //[SerializeField]
+    public float direction;
 
     public void SetOption(float angle, float speed, float direction)
     {

@@ -42,44 +42,14 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
         player.velocity = Vector2.down * gravity;
-        Move();
-        Fire(); //총알 발사
-        Reload();
-
-
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S) && skillCoolImg.fillAmount == 1.0f)
-        {
-            if (isFire)
-            {
-                FireSkill();
-                isFire = false;
-            }
-            
-        }
-
-        if (!isFire)  //쿨타임 아직 안찼을때만 쿨타임 감소시킴
-        {
-            cooltime();
-        }
-    }
-
-
-    void cooltime()
-    {
-        if (curTime > 0)
-        {
-            curTime -= Time.deltaTime;
-        }
-        else //curTime <= 0
-        {
-            curTime = 13.0f;
-            skillCoolImg.fillAmount = 1.0f;
-            isFire = true;
-        }
+        Move();
+        Fire(); //총알 발사
+        FireSkill();
+        Reload();
     }
 
 
@@ -214,20 +184,43 @@ public class Player : MonoBehaviour
 
     void FireSkill()  //스킬 버튼 누르면 원모양으로 불이 퍼져나감 
     {
-        
-        int roundNumA =  25;
 
-
-        for (int i = 0; i < roundNumA; i++)
+        if (Input.GetKeyDown(KeyCode.S) && isFire)
         {
-            GameObject fireObj = Instantiate(fire_skill, transform.position, Quaternion.identity);
-            Rigidbody2D rigid = fireObj.GetComponent<Rigidbody2D>();
-            Vector2 dirVec = new Vector2(Mathf.Cos(Mathf.PI * 2 * i / roundNumA),
-                             Mathf.Sin(Mathf.PI * 2 * i /roundNumA));  //원 형태로 발사
-            rigid.AddForce(dirVec.normalized * 5, ForceMode2D.Impulse);
+            Debug.Log("s키 누름");
 
+            int roundNumA = 25;
+
+            for (int i = 0; i < roundNumA; i++)
+            {
+                GameObject fireObj = Instantiate(fire_skill, transform.position, Quaternion.identity);
+                Rigidbody2D rigid = fireObj.GetComponent<Rigidbody2D>();
+                Vector2 dirVec = new Vector2(Mathf.Cos(Mathf.PI * 2 * i / roundNumA),
+                                 Mathf.Sin(Mathf.PI * 2 * i / roundNumA));  //원 형태로 발사
+                rigid.AddForce(dirVec.normalized * 5, ForceMode2D.Impulse);
+
+            }
+            isFire = false;
+            Debug.Log("스킬 써짐");
         }
-        isFire = false;
+        if (!isFire)
+        {
+            cooltime();
+        }
+    }
+
+    void cooltime()
+    {
+        if (curTime > 0)
+        {
+            curTime -= Time.deltaTime;
+        }
+        else //curTime <= 0
+        {
+            curTime = 13.0f;
+            skillCoolImg.fillAmount = 1.0f;
+            isFire = true;
+        }
     }
 
 }

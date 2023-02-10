@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -131,6 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 20277939}
   - component: {fileID: 20277938}
+  - component: {fileID: 20277940}
   - component: {fileID: 20277937}
   m_Layer: 0
   m_Name: Main Camera
@@ -204,6 +205,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &20277940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20277936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &47453904
 GameObject:
   m_ObjectHideFlags: 0
@@ -750,7 +782,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   done: 0
+  "\uAC15\uC81Cdone": 0
   next: {fileID: 101788920}
+  paper: {fileID: 0}
 --- !u!114 &1321318220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -783,12 +817,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 2
-  m_Text: "\uB204\uAD70\uAC00\uC758 \uD55C\uB0B1 \uACC4\uB7B5 \uB530\uC704\uC5D0
-    \uB118\uC5B4\uC9C8 \uC21C \uC5C6\uC9C0.\n\uADF8\uAC83\uC774 \uC544\uBB34\uB9AC
-    \uC2E0\uB4E4\uC758 \uC655, \uC81C\uC6B0\uC2A4\uC758 \uAC83\uC774\uB77C \uD574\uB3C4.\n\uD0DC\uC591\uC740
-    \uC5B8\uC81C\uB098 \uAC19\uC740 \uC790\uB9AC\uC5D0\uC11C \uC19F\uC544\uC624\uB974\uB2C8!\n\uC790,
-    \uBAA8\uB450 \uC704\uB300\uD55C \uD0DC\uC591\uC758 \uC2E0 \uD5EC\uB9AC\uC624\uC2A4\uB97C
-    \uCC2C\uBBF8\uD558\uB77C!        "
+  m_Text: "\uD0DC\uC591\uC740 \uC5B8\uC81C\uB098 \uAC19\uC740 \uC790\uB9AC\uC5D0\uC11C
+    \uC19F\uC544\uC624\uB974\uB2C8! \uC704\uB300\uD55C\n\uD0DC\uC591\uC2E0, \uC774
+    \uD5EC\uB9AC\uC624\uC2A4\uB97C \uCC2C\uBBF8\uD558\uB77C!\r    "
 --- !u!222 &1321318221
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -890,7 +921,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   done: 0
+  "\uAC15\uC81Cdone": 0
   next: {fileID: 1321318217}
+  paper: {fileID: 0}
 --- !u!114 &1548541960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -923,11 +956,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 2
-  m_Text: "\uD0DC\uC591\uC758 \uC2E0\uC774 \uC5EC\uC804\uD788 \uAC74\uC7AC\uD558\uB2E4\uB294
-    \uAC83\uC744 \uB9E4\uBC88 \uC774\uB807\uAC8C \uC190\uC218 \n\uBCF4\uC5EC\uC918\uC57C
-    \uD558\uB2E4\uB2C8. \uC81C\uC6B0\uC2A4\uB97C \uB118\uC5B4\uC120 \uD5EC\uB9AC\uC624\uC2A4\uC758
-    \uC774\uC57C\uAE30\uB85C \n\uD55C\uB3D9\uC548 \uC62C\uB9BC\uD3EC\uC2A4\uAC00
-    \uC2DC\uB044\uB7FD\uACA0\uAD70.        "
+  m_Text: "\uD558\uD558, \uC81C\uC6B0\uC2A4. \uD2F0\uD0C0\uB178\uB9C8\uD0A4\uC544\uC5D0\uC11C
+    \uB124\uAC8C \uB9DE\uC11C\uC9C0\uB3C4 \uC54A\uC740\n\uB098\uB97C \uC774\uB807\uAC8C
+    \uCAD3\uC544\uB0B4\uC2DC\uACA0\uB2E4? \uC544\uBB34\uB9AC \uC2E0\uB4E4\uC774 \uC655\uC774\uB798\uB3C4
+    \uADF8\uAC74\n\uC5B4\uB9BC\uC5C6\uC9C0. \uC81C\uC6B0\uC2A4\uC758 \uC624\uB9CC
+    \uB530\uC704\uC5D0 \uAC78\uB824\uB4E4 \uD0DC\uC591\uC2E0\uC774 \uC544\uB2C8\uB2E4!\r    "
 --- !u!222 &1548541961
 CanvasRenderer:
   m_ObjectHideFlags: 0
