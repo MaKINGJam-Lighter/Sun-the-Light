@@ -88,8 +88,6 @@ public class LevelManager : MonoBehaviour
             {
                 levelUpText.enabled = true;
                 Invoke("TurnOffText", 1f);
-                BGMAudioSource.clip = BGMClips[0];
-                BGMAudioSource.Play();
             }
         }
         isApolloKilled = GameObject.Find("GameManager").GetComponent<GameManager>().isApolloKilled;

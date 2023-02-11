@@ -114,17 +114,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65588d091445b40e6ae67ddc3a4a6cbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
   UIScore: {fileID: 0}
   UIMaxScore: {fileID: 0}
   gameManager: {fileID: 0}
-  wine: {fileID: 8527877785614423500, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
+  wine: {fileID: 1502205879178094365, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
   score: 500
   hp: 10
   life: 3
   destroyClip: {fileID: 8300000, guid: 3b88468a119494313a7f856e6a046ba0, type: 3}
   hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
-  wine: {fileID: 1502205879178094365, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
+  playerEffectAudioSource: {fileID: 0}
 --- !u!95 &2243065853821260772
 Animator:
   serializedVersion: 3
