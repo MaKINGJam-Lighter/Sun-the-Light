@@ -13,6 +13,7 @@ public class ScreenShot : MonoBehaviour
     public GameObject maxScore;
     public GameObject skillShadow;
     public GameObject skill;
+    public GameObject Text;
 
     private int isScreenShot=1;
 
@@ -36,6 +37,7 @@ public class ScreenShot : MonoBehaviour
                     skill.SetActive(false);
                     healthBar.SetActive(false);
                     score.SetActive(false);
+                    Text.SetActive(false);
                     pauseImage.GetComponent<Image>().enabled = false;
                 }
                 else
@@ -45,6 +47,7 @@ public class ScreenShot : MonoBehaviour
                     skill.SetActive(true);
                     healthBar.SetActive(true);
                     score.SetActive(true);
+                    Text.SetActive(true);
                     pauseImage.GetComponent<Image>().enabled = true ;
                 }
             }
