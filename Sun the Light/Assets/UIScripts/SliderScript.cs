@@ -39,7 +39,6 @@ public class SliderScript : MonoBehaviour
         if(this.gameObject.name== "BackgroundSlider")
         {
             BgmValue = slider.value;
-            //print(BgmValue);
         }
         else if(this.gameObject.name == "EffectSlider")
         {

@@ -59,7 +59,7 @@ public class SoundManager : MonoBehaviour
 
     private void Update()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 0)
+        if (SceneManager.GetActiveScene().buildIndex == 7)
         {
             //print(this.isBgm);
             //print(this.wholeBgm);
