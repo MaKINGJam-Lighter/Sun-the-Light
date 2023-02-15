@@ -31,6 +31,6 @@ public class wine : MonoBehaviour
     private void IncreaseHP()
     {
         //playerEffectAudioSource.Play();
-        //healthBar.value += hp;
+        healthBar.value += hp;
     }
 }
