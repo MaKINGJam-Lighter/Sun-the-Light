@@ -78,27 +78,31 @@ public class Manage : MonoBehaviour
         }
         
         //레벨 1에서 게임오버 할 떄 메세지 활성화 할 것(레벨따라 메세지 다르게)
-        if(PlayerPrefs.GetInt("ClearStage")==1)
+        /*if(PlayerPrefs.GetInt("ClearStage")==1)//디폴트엔딩
+        {
+            text1.SetActive(true);
+            text0.SetActive(false);
+        }*/      
+        
+        if (PlayerPrefs.GetInt("ClearStage")==2)//레벨1 대사
         {
             text1.SetActive(true);
             text0.SetActive(false);
         }
-        else if (PlayerPrefs.GetInt("ClearStage")==2)
+        else if (PlayerPrefs.GetInt("ClearStage")==3)//레벨2 대사
         {
             text2.SetActive(true);
             text0.SetActive(false);
         }
-        else if (PlayerPrefs.GetInt("ClearStage")==3)
+        else if (PlayerPrefs.GetInt("ClearStage") == 4)//레벨3 대사
         {
             text3.SetActive(true);
             text0.SetActive(false);
         }
-        else if (PlayerPrefs.GetInt("ClearStage") == 4)
+        else if (PlayerPrefs.GetInt("ClearStage") == 5)//레벨4 대사
         {
             text4.SetActive(true);
             text0.SetActive(false);
         }
-
-
     }
 }
