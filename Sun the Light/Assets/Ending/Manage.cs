@@ -21,6 +21,8 @@ public class Manage : MonoBehaviour
     public GameObject text1;
     public GameObject text2;
     public GameObject text3;
+    public GameObject text4;
+    public GameObject text0;
 
     //여기
     public GameObject GameOverMsg;
@@ -79,16 +81,23 @@ public class Manage : MonoBehaviour
         if(PlayerPrefs.GetInt("ClearStage")==1)
         {
             text1.SetActive(true);
+            text0.SetActive(false);
         }
         else if (PlayerPrefs.GetInt("ClearStage")==2)
         {
             text2.SetActive(true);
+            text0.SetActive(false);
         }
         else if (PlayerPrefs.GetInt("ClearStage")==3)
         {
             text3.SetActive(true);
+            text0.SetActive(false);
         }
-
+        else if (PlayerPrefs.GetInt("ClearStage") == 4)
+        {
+            text4.SetActive(true);
+            text0.SetActive(false);
+        }
 
 
     }
