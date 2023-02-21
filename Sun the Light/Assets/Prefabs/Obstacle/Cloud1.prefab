@@ -270,6 +270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3083390166772036826}
   - component: {fileID: 176165537177599824}
+  - component: {fileID: 4376774307626505568}
   m_Layer: 0
   m_Name: Cloud1
   m_TagString: Obstacle
@@ -307,3 +308,17 @@ MonoBehaviour:
   angle: 0
   speed: 0
   direction: 0
+--- !u!114 &4376774307626505568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3597525510079925012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa4c517e8b86994ca5260e4e65b92d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBgm: 0
+  isEffect: 1
