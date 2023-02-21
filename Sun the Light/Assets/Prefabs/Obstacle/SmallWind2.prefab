@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5242326697219178307}
   - component: {fileID: 131975940340480512}
   - component: {fileID: 9155435465228914377}
+  - component: {fileID: 5957889295393668795}
   m_Layer: 0
   m_Name: wind4
   m_TagString: Obstacle
@@ -260,6 +261,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5957889295393668795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563214758413547748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa4c517e8b86994ca5260e4e65b92d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBgm: 0
+  isEffect: 1
 --- !u!1 &2716419894829695374
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,6 +290,7 @@ GameObject:
   - component: {fileID: 1492556818878965074}
   - component: {fileID: 7266087819255881883}
   - component: {fileID: 1799474196611253889}
+  - component: {fileID: 3680935171148760464}
   m_Layer: 0
   m_Name: wind3
   m_TagString: Obstacle
@@ -520,6 +536,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3680935171148760464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2716419894829695374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa4c517e8b86994ca5260e4e65b92d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBgm: 0
+  isEffect: 1
 --- !u!1 &3449210572501281820
 GameObject:
   m_ObjectHideFlags: 0
@@ -535,6 +565,7 @@ GameObject:
   - component: {fileID: 6342964719960812891}
   - component: {fileID: 7898789425030726165}
   - component: {fileID: 3723665849014389698}
+  - component: {fileID: 5609583687704563059}
   m_Layer: 0
   m_Name: wind8
   m_TagString: Obstacle
@@ -780,6 +811,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5609583687704563059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3449210572501281820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa4c517e8b86994ca5260e4e65b92d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBgm: 0
+  isEffect: 1
 --- !u!1 &3597525510079925012
 GameObject:
   m_ObjectHideFlags: 0
@@ -864,6 +909,7 @@ GameObject:
   - component: {fileID: 8287413208215967727}
   - component: {fileID: 3886276004063942099}
   - component: {fileID: 5360687728255607040}
+  - component: {fileID: 4416635381301487284}
   m_Layer: 0
   m_Name: wind1
   m_TagString: Obstacle
@@ -1109,6 +1155,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4416635381301487284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4724740612771191527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa4c517e8b86994ca5260e4e65b92d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBgm: 0
+  isEffect: 1
 --- !u!1 &7092284141998721769
 GameObject:
   m_ObjectHideFlags: 0
@@ -1124,6 +1184,7 @@ GameObject:
   - component: {fileID: 673438015767009410}
   - component: {fileID: 8378567429069262404}
   - component: {fileID: 2050162117971027028}
+  - component: {fileID: 7855830468342771751}
   m_Layer: 0
   m_Name: wind5
   m_TagString: Obstacle
@@ -1369,6 +1430,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7855830468342771751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7092284141998721769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa4c517e8b86994ca5260e4e65b92d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBgm: 0
+  isEffect: 1
 --- !u!1 &8372760825779191487
 GameObject:
   m_ObjectHideFlags: 0
@@ -1384,6 +1459,7 @@ GameObject:
   - component: {fileID: 6913923824473386786}
   - component: {fileID: 1142657079324135902}
   - component: {fileID: 2195473731813504676}
+  - component: {fileID: 4637298612960785310}
   m_Layer: 0
   m_Name: wind7
   m_TagString: Obstacle
@@ -1629,6 +1705,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4637298612960785310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8372760825779191487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa4c517e8b86994ca5260e4e65b92d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBgm: 0
+  isEffect: 1
 --- !u!1 &8644294147837562822
 GameObject:
   m_ObjectHideFlags: 0
@@ -1644,6 +1734,7 @@ GameObject:
   - component: {fileID: 7449178069323268596}
   - component: {fileID: 5718563971698076723}
   - component: {fileID: 1118262871404938455}
+  - component: {fileID: 5800608869629496844}
   m_Layer: 0
   m_Name: wind6
   m_TagString: Obstacle
@@ -1889,6 +1980,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5800608869629496844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8644294147837562822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa4c517e8b86994ca5260e4e65b92d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBgm: 0
+  isEffect: 1
 --- !u!1 &8996958219964695702
 GameObject:
   m_ObjectHideFlags: 0
@@ -1904,6 +2009,7 @@ GameObject:
   - component: {fileID: 9136776439987841313}
   - component: {fileID: 8572422350989991543}
   - component: {fileID: 5430047497686408135}
+  - component: {fileID: 4950003277910051950}
   m_Layer: 0
   m_Name: wind2
   m_TagString: Obstacle
@@ -2149,3 +2255,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4950003277910051950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8996958219964695702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa4c517e8b86994ca5260e4e65b92d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBgm: 0
+  isEffect: 1

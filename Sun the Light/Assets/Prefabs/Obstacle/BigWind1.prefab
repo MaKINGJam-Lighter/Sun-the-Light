@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3261345441449045626}
   - component: {fileID: 7523277427160611594}
   - component: {fileID: 6908245102259158132}
+  - component: {fileID: 832362762046151781}
   m_Layer: 0
   m_Name: wind3
   m_TagString: Obstacle
@@ -260,6 +261,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &832362762046151781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2716419894829695374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa4c517e8b86994ca5260e4e65b92d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBgm: 0
+  isEffect: 1
 --- !u!1 &3597525510079925012
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,6 +354,7 @@ GameObject:
   - component: {fileID: 4763082071294978855}
   - component: {fileID: 853428384790846935}
   - component: {fileID: 8075059455715019709}
+  - component: {fileID: 439502432676335077}
   m_Layer: 0
   m_Name: wind1
   m_TagString: Obstacle
@@ -584,6 +600,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &439502432676335077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4724740612771191527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa4c517e8b86994ca5260e4e65b92d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBgm: 0
+  isEffect: 1
 --- !u!1 &8996958219964695702
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,6 +629,7 @@ GameObject:
   - component: {fileID: 1758876523738746676}
   - component: {fileID: 3206876780244703436}
   - component: {fileID: 4606808516886519868}
+  - component: {fileID: 5538005494922499867}
   m_Layer: 0
   m_Name: wind2
   m_TagString: Obstacle
@@ -844,3 +875,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5538005494922499867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8996958219964695702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa4c517e8b86994ca5260e4e65b92d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBgm: 0
+  isEffect: 1

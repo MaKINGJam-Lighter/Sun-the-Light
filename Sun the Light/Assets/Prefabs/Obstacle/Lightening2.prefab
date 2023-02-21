@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2156378322459507957}
   - component: {fileID: 1429347809862119416}
   - component: {fileID: 6939059769816729722}
+  - component: {fileID: 3031779746218926884}
   m_Layer: 0
   m_Name: Lightening
   m_TagString: Obstacle
@@ -291,12 +292,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f4408c0a3b7aae44a828e111c900bdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
   UIScore: {fileID: 0}
   UIMaxScore: {fileID: 0}
   gameManager: {fileID: 0}
   score: 0
   hp: 20
-  life: 0
+--- !u!114 &3031779746218926884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806615063404114738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa4c517e8b86994ca5260e4e65b92d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBgm: 0
+  isEffect: 1
 --- !u!1 &1169329598091708463
 GameObject:
   m_ObjectHideFlags: 0
