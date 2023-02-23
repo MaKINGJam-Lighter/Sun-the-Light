@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2243065853821260772}
   - component: {fileID: 1828524857182617294}
   - component: {fileID: 4196504596658665752}
+  - component: {fileID: 1441653662752818103}
   m_Layer: 0
   m_Name: Cloud1
   m_TagString: Obstacle
@@ -260,6 +261,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1441653662752818103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806615063404114738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa4c517e8b86994ca5260e4e65b92d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBgm: 0
+  isEffect: 1
 --- !u!1 &3597525510079925012
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,6 +285,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3083390166772036826}
   - component: {fileID: 176165537177599824}
+  - component: {fileID: 4376774307626505568}
   m_Layer: 0
   m_Name: Cloud1
   m_TagString: Obstacle
@@ -307,3 +323,17 @@ MonoBehaviour:
   angle: 0
   speed: 0
   direction: 0
+--- !u!114 &4376774307626505568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3597525510079925012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa4c517e8b86994ca5260e4e65b92d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBgm: 0
+  isEffect: 1

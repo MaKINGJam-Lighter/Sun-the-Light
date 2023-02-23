@@ -10,7 +10,7 @@ public class WholeSoundButtonEvent: MonoBehaviour
     public GameObject button;
     private Image buttonImage;
     private int wholeSoundIsOn=1;
-    private Color color = new Color(254f/255f,206f/255f,33f/ 255f);//노란색
+    private Color color = new Color(113f/255f,140f/255f,225f/ 255f);//파란색
 
     private void Start()
     {
@@ -39,6 +39,10 @@ public class WholeSoundButtonEvent: MonoBehaviour
             }
         }
     }
+   /* private void Update()
+    {
+        print(wholeSoundIsOn);
+    }*/
 
     public void OnOffEvent()
     {

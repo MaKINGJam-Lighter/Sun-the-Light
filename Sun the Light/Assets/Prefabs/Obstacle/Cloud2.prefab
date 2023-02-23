@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 9101306442045611494}
   - component: {fileID: 1755711391989931693}
   - component: {fileID: 2816836944060635784}
+  - component: {fileID: 1640691410693341916}
   m_Layer: 0
   m_Name: Cloud2
   m_TagString: Obstacle
@@ -260,6 +261,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1640691410693341916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3229429107960255220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa4c517e8b86994ca5260e4e65b92d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBgm: 0
+  isEffect: 1
 --- !u!1 &3597525510079925012
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,6 +285,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3083390166772036826}
   - component: {fileID: 4758492315982222656}
+  - component: {fileID: 1430944104710892780}
   m_Layer: 0
   m_Name: Cloud2
   m_TagString: Obstacle
@@ -308,6 +324,20 @@ MonoBehaviour:
   angle: 0
   speed: 0
   direction: 0
+--- !u!114 &1430944104710892780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3597525510079925012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa4c517e8b86994ca5260e4e65b92d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBgm: 0
+  isEffect: 1
 --- !u!1 &4724740612771191527
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,6 +353,7 @@ GameObject:
   - component: {fileID: 8114066265664754393}
   - component: {fileID: 7260423539708142794}
   - component: {fileID: 4686137063353850436}
+  - component: {fileID: 2176183708259684568}
   m_Layer: 0
   m_Name: Cloud1
   m_TagString: Obstacle
@@ -568,3 +599,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2176183708259684568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4724740612771191527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa4c517e8b86994ca5260e4e65b92d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBgm: 0
+  isEffect: 1

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5860893930830072225}
   - component: {fileID: 4372629905170961361}
   - component: {fileID: 2843864161732929577}
+  - component: {fileID: -3632499320655612688}
   m_Layer: 0
   m_Name: FireSkillZeus
   m_TagString: Obstacle
@@ -260,3 +261,17 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0043123057, y: 0.03018486}
   m_Size: {x: 0.30417943, y: 1.4278826}
   m_Direction: 0
+--- !u!114 &-3632499320655612688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7511446267817272168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa4c517e8b86994ca5260e4e65b92d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBgm: 0
+  isEffect: 1

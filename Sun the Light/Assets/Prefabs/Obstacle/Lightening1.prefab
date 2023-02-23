@@ -178,6 +178,7 @@ GameObject:
   - component: {fileID: 5185775116900950983}
   - component: {fileID: 1503892298111003635}
   - component: {fileID: 4901397113579542424}
+  - component: {fileID: 4231012558743191607}
   m_Layer: 0
   m_Name: Lightening
   m_TagString: Obstacle
@@ -262,6 +263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f4408c0a3b7aae44a828e111c900bdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
   UIScore: {fileID: 0}
   UIMaxScore: {fileID: 0}
   gameManager: {fileID: 0}
@@ -458,3 +460,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4231012558743191607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6970372172069781146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa4c517e8b86994ca5260e4e65b92d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBgm: 0
+  isEffect: 1
