@@ -5,10 +5,13 @@ using UnityEngine.UI;
 
 public class ScoreAndHp : MonoBehaviour
 {
-    private Slider healthBar;
+    
     public Text UIScore;
     public Text UIMaxScore;
     public GameManager gameManager;
+
+    [SerializeField]
+    private Slider healthBar;
 
     [SerializeField]
     private float score;
@@ -46,7 +49,7 @@ public class ScoreAndHp : MonoBehaviour
     private void Start()
     {
         effectAudioSource = GetComponent<AudioSource>();
-        healthBar = GameObject.FindWithTag("HP").GetComponent<Slider>();
+        //healthBar = GameObject.FindWithTag("HP").GetComponent<Slider>();
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 

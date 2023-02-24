@@ -27,10 +27,12 @@ public class CityTrigger : MonoBehaviour
     [SerializeField]
     private GameObject cityFire;
 
+    private AudioSource star;
+
     // Start is called before the first frame update
     void Start()
     {
-          
+        star = GameObject.FindWithTag("Star").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -55,15 +57,24 @@ public class CityTrigger : MonoBehaviour
                     starAudioSource.Play();
                     isSoundPlay = true;
                 }
-                else if (!isSoundPlay && GameObject.FindWithTag("Player").transform.position.y < 0)
+                else if(!isSoundPlay && GameObject.FindWithTag("Player").transform.position.y < 0)
                 {
-                    cityFire.SetActive(true);
-                    cityFire.transform.position = new Vector3(GameObject.FindWithTag("Player").transform.position.x, -4.2f, 0);
-                    cityAudioSource.Play();
+                    cityFireActive();
                     isSoundPlay = true;
+                }
+                else if (isSoundPlay && GameObject.FindWithTag("Player").transform.position.y < 0)
+                {
+                    Invoke("cityFireActive", 3f);
                 }
             }
         }
+    }
+
+    private void cityFireActive()
+    {
+        cityFire.SetActive(true);
+        cityFire.transform.position = new Vector3(GameObject.FindWithTag("Player").transform.position.x, -4.2f, 0);
+        cityAudioSource.Play();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -72,6 +83,7 @@ public class CityTrigger : MonoBehaviour
         {
             isSoundPlay = false;
             isStart = true;
+            star.loop = true;
         }
     }
 
@@ -83,6 +95,8 @@ public class CityTrigger : MonoBehaviour
             isSoundPlay = false;
             isStart = false;
             timer = 0;
+            star.loop = false;
+            star.Stop();
         }
     }
 }

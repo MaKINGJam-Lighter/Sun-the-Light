@@ -13,7 +13,10 @@ public class TurnOffCityFire : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Invoke("TurnOff", 3f);
+        if (gameObject.activeSelf)
+        {
+            Invoke("TurnOff", 3f);
+        }
     }
 
     private void TurnOff()

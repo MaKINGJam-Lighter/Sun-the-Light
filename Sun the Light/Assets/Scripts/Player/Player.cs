@@ -19,8 +19,8 @@ public class Player : MonoBehaviour
     public GameObject fire_backward;
     public GameObject fire_skill;
 
-    Animator bigWheelAnim;  //나중에 애니메이션 위해서
-    Animator smallWheelAnim;
+    //Animator bigWheelAnim;  //나중에 애니메이션 위해서
+    //Animator smallWheelAnim;
     Rigidbody2D player;
 
     public float curTime;
@@ -31,8 +31,8 @@ public class Player : MonoBehaviour
 
     void Awake()
     {
-        bigWheelAnim = gameObject.transform.GetChild(3).GetComponent<Animator>();
-        smallWheelAnim = gameObject.transform.GetChild(4).GetComponent<Animator>();
+        //bigWheelAnim = gameObject.transform.GetChild(3).GetComponent<Animator>();
+        //smallWheelAnim = gameObject.transform.GetChild(4).GetComponent<Animator>();
         player = GetComponent<Rigidbody2D>();
         curTime = coolTime;
         //player.AddForce(Vector2.down * gravity, ForceMode2D.Impulse);
@@ -45,26 +45,36 @@ public class Player : MonoBehaviour
         Move();
         Fire(); //총알 발사
         Reload();
-
+        if (isFire)
+        {
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                FireSkill();
+            }
+        }
+        else
+        {
+            cooltime();
+        }
 
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S) && skillCoolImg.fillAmount == 1.0f)
-        {
-            if (isFire)
-            {
-                FireSkill();
-                isFire = false;
-            }
+        //if (Input.GetKeyDown(KeyCode.S) && skillCoolImg.fillAmount == 1.0f)
+        //{
+            //if (isFire)
+            //{
+                //FireSkill();
+                //isFire = false;
+            //}
             
-        }
+        //}
 
-        if (!isFire)  //쿨타임 아직 안찼을때만 쿨타임 감소시킴
-        {
-            cooltime();
-        }
+        //if (!isFire)  //쿨타임 아직 안찼을때만 쿨타임 감소시킴
+        //{
+        //    cooltime();
+        //}
     }
 
 

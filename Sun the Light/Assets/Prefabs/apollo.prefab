@@ -222,6 +222,8 @@ GameObject:
   - component: {fileID: 7584055275600395795}
   - component: {fileID: 7584055275600395794}
   - component: {fileID: 7584055275600395797}
+  - component: {fileID: 500199883365491900}
+  - component: {fileID: 6871041139541144562}
   m_Layer: 0
   m_Name: apollo
   m_TagString: Untagged
@@ -237,7 +239,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7584055275600395796}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6, y: -2, z: 0}
+  m_LocalPosition: {x: 6, y: -4, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 3878034892217805740}
@@ -361,6 +363,44 @@ MonoBehaviour:
   hpBar: {fileID: 0}
   attackPower: 2
   isApollo: 1
+--- !u!114 &500199883365491900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7584055275600395796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae6d0293b3a5efd448e404c07791f04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bignote: {fileID: 83135827754544790, guid: 9b17572199581f14facb1ab7f047c175, type: 3}
+  smallnote1: {fileID: 4617447241771724334, guid: 3408e6d3556d32a4d98d0797263d7a8b,
+    type: 3}
+  smallnote2: {fileID: 4617447241771724334, guid: 3408e6d3556d32a4d98d0797263d7a8b,
+    type: 3}
+  smallnote3: {fileID: 4617447241771724334, guid: 3408e6d3556d32a4d98d0797263d7a8b,
+    type: 3}
+--- !u!95 &6871041139541144562
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7584055275600395796}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 78368970c179b44beb46595daf823e01, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8239632921221929352
 GameObject:
   m_ObjectHideFlags: 0
