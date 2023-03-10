@@ -9,6 +9,7 @@ public class Skip : MonoBehaviour
     public GameObject restartBtn;
     public GameObject paper;
     public GameObject toMain;
+    TypingEffect scoreBoard=new TypingEffect();
     public void clickEffect()
     {
         //리스타트버튼 부르고
@@ -17,6 +18,8 @@ public class Skip : MonoBehaviour
         toMain.SetActive(true);
         //페이퍼 오브젝트는 비활성화 바이..
         paper.SetActive(false);
+        //스코어보드씬
+        scoreBoard.gotoScoreboard();
     }
 
     //마우스포인터가 위로 올라오면

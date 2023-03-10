@@ -19,26 +19,22 @@ public class SoundManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        /* //DontDestroyOnLoad없어도될듯
-        //그냥 씬매니저: 변수저장용도로.
-        //DontDestroyOnLoad(this.gameObject);
-        //main = this.gameObject;*/
-        
+       
         //사운드
         this.effectValue = SliderScript.EffectValue;
         this.bgmValue = SliderScript.BgmValue;
-        print(SliderScript.BgmValue);
+        
         //전체사운드
         this.wholeEffect = WholeSoundButtonEvent.Effect;
         this.wholeBgm = WholeSoundButtonEvent.Bgm;
-        //print(WholeSoundButtonEvent.Bgm);
+      
         //오디오소스 가져오기
         music=this.gameObject.GetComponent<AudioSource>();
 
         if (isBgm)
         {
-            print(wholeBgm);
-            print(wholeEffect);
+           
+           
             if (wholeBgm == false)
             {
                 music.volume = 0f;
@@ -61,9 +57,6 @@ public class SoundManager : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().buildIndex == 7)
         {
-            //print(this.isBgm);
-            //print(this.wholeBgm);
-
             //사운드
             this.effectValue = SliderScript.EffectValue;
             this.bgmValue = SliderScript.BgmValue;
