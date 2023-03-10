@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.IO;
+using System;
 
 public class TypingEffect : MonoBehaviour
 {
@@ -18,6 +20,117 @@ public class TypingEffect : MonoBehaviour
 
     //텍스트 가져오기
     //public GameObject gameOverMsg;
+    //스코어보드
+    public List<string> scores = new List<string>();
+    public List<string> top7_scores = new List<string>();
+    public ScoreBoard scoreboard = new ScoreBoard();
+    public static int present_score_index;
+
+    public void gotoScoreboard()
+    {
+        string read_line = "";
+
+        //scores 리스트에 점수들 다 넣는다.
+        int k = 0;
+        StreamReader sr = new StreamReader(new FileStream("Assets/UIScripts/ScoreText.txt", FileMode.Open));
+        while (sr.EndOfStream == false) // 스트림의 끝에 도달했는지 알려주는 EndOfStream 프로퍼티
+        {
+            read_line = sr.ReadLine();
+            scores.Add(read_line);
+        }
+        sr.Close();
+
+        //상위 7개 추린다.(현재 점수가 상위 7개보다 높은지 비교하기위해서)
+        //점수안에 7개 이상 있으면
+        if (scores.Count >= 7)
+        {
+            double highest = 0;
+            for (int i = 0; i < 7; i++)
+            {
+                highest = 0;
+                for (int j = 0; j <= scores.Count - 1; j++)
+                {
+                    if (Convert.ToDouble(scores[j]) > highest)
+                    {
+                        highest = Convert.ToDouble(scores[j]);
+                    }
+                }
+                //scores에서 가장 높은거 top7_scores에 넣고 지우는거 반복
+                top7_scores.Add(highest.ToString());
+                scores.Remove(highest.ToString());//지운다. (다음 높은거 추려야하니까)
+            }
+            //top7 내림차순정렬
+            for (int i = 0; i < top7_scores.Count - 1; i++)
+            {
+                for (int j = i + 1; j < top7_scores.Count; j++)
+                {
+                    if (Convert.ToDouble(top7_scores[i]) < Convert.ToDouble(top7_scores[j]))
+                    {
+                        top7_scores[i] = top7_scores[j];
+                    }
+                }
+            }
+          
+
+            //상위 7개 추렸으니, 현재점수가 그 안에 들어가는지 체크
+            if (GameManager.is_repititive==false&&(double)GameManager.present_score >= Convert.ToDouble(top7_scores[6]))
+            {
+                //상위7개 저장& 7위보다 높은 점수면 스코어보드 씬으로 이동
+                ScoreBoard.top7_scores = top7_scores;
+                //IDWithScore에 일단 지금 점수 적어놓음(스코어보드 씬에서 아이디도 이어 적음. )
+                //구분문자: \t
+                scoreboard.WriteTxtAppend("Assets/UIScripts/IDWithScore.txt", GameManager.present_score.ToString() + "\t");
+                SceneManager.LoadScene("ScoreBoard");
+            }
+        }
+        else//점수안에 7개 미만이면
+        {
+            double highest = 0;//가장높은 수 저장
+            //7갠지 몇갠지 모르니까 count만큼
+            int start_i_range = scores.Count;
+            for (int i = 0; i < start_i_range; i++)
+            {
+                highest = 0;
+                for (int j = 0; j <= scores.Count - 1; j++)
+                {
+
+                    if (Convert.ToDouble(scores[j]) > highest)
+                    {
+                        highest = Convert.ToDouble(scores[j]);
+                    }
+                }
+
+                //scores에서 가장 높은거 top7_scores에 넣고 지우는거 반복
+                top7_scores.Add(highest.ToString());
+                scores.Remove(highest.ToString());
+               
+            }
+
+            //top7 내림차순정렬
+            for (int i = 0; i < top7_scores.Count - 1; i++)
+            {
+                for (int j = i + 1; j < top7_scores.Count; j++)
+                {
+                    if (Convert.ToDouble(top7_scores[i]) < Convert.ToDouble(top7_scores[j]))
+                    {
+                        top7_scores[i] = top7_scores[j];
+                    }
+                }
+            }
+
+         
+
+            //상위n개 저장& 바로 스코어보드 씬으로 이동
+            ScoreBoard.top7_scores = top7_scores;
+            if (GameManager.is_repititive == false)
+            {
+                scoreboard.WriteTxtAppend("Assets/UIScripts/IDWithScore.txt", GameManager.present_score.ToString() + "\t");
+                SceneManager.LoadScene("ScoreBoard");
+            }
+
+        }
+
+    }
 
     void Start()
     {
@@ -54,6 +167,8 @@ public class TypingEffect : MonoBehaviour
                 toMain.SetActive(true);
                 //이 오브젝트는 비활성화 바이..
                 paper.SetActive(false);
+                //스코어보드씬
+                gotoScoreboard();
             }
         }
     }
@@ -74,6 +189,8 @@ public class TypingEffect : MonoBehaviour
                 toMain.SetActive(true);
                 //이 오브젝트는 비활성화 바이..
                 paper.SetActive(false);
+                //스코어보드씬
+                gotoScoreboard();
             }
         }
     }

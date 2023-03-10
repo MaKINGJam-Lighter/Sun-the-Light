@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Manage : MonoBehaviour
@@ -24,6 +26,7 @@ public class Manage : MonoBehaviour
     public GameObject text4;
     public GameObject text0;
 
+   
     //여기
     public GameObject GameOverMsg;
     public GameObject RestartBtn;

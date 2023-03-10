@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SoundControl.unity
     guid: f61015e1adfc27b4ba80a39508d2c400
+  - enabled: 1
+    path: Assets/Scenes/ScoreBoard.unity
+    guid: e7ce0dc60f273a044abc3ccd4d3eca56
   m_configObjects: {}
