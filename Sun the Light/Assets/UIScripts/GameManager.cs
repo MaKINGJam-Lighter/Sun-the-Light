@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     ScoreBoard score_board = new ScoreBoard();
     private void Start()
     {
+        present_score = 0;
         is_repititive = false;
         maxScore = Single.Parse(PlayerPrefs.GetString("MaxScore"));
     }

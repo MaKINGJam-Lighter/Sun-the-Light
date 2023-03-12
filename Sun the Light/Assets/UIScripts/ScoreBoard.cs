@@ -181,6 +181,27 @@ public class ScoreBoard : MonoBehaviour
             is_typed = true;
         }
 
+        //아이디 입력없이 버튼 눌렀을 경우 대비
+        if (SceneController.is_pushed_for_RankScene)
+        {
+            bool is_ID_nontyped=false;
+            StreamReader sr = new StreamReader(new FileStream("Assets/UIScripts/IDWithScore.txt", FileMode.Open));
+            while (sr.EndOfStream == false) // 스트림의 끝에 도달했는지 알려주는 EndOfStream 프로퍼티
+            {
+                string line = sr.ReadLine();
+                string[] score_and_id;
+                score_and_id = line.Split('\t');
+                if ("" == score_and_id[1])//아이디 아직 입력 안 한 상태 대비
+                {
+                    is_ID_nontyped = true;
+                }
+            }
+            sr.Close();
+            if (is_ID_nontyped)
+            {
+                WriteTxtAppend("Assets/UIScripts/IDWithScore.txt", " \n");
+            }
+        }
 
     }
 }
