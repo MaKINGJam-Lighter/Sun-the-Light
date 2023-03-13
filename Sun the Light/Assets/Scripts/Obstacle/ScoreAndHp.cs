@@ -10,8 +10,7 @@ public class ScoreAndHp : MonoBehaviour
     public Text UIMaxScore;
     public GameManager gameManager;
 
-    [SerializeField]
-    private Slider healthBar;
+    public Slider healthBar;
 
     [SerializeField]
     private float score;
@@ -36,6 +35,9 @@ public class ScoreAndHp : MonoBehaviour
 
     private float rand;
 
+    [SerializeField]
+    private GameObject parent;
+
     public float GetScore()
     {
         return score;
@@ -49,7 +51,7 @@ public class ScoreAndHp : MonoBehaviour
     private void Start()
     {
         effectAudioSource = GetComponent<AudioSource>();
-        //healthBar = GameObject.FindWithTag("HP").GetComponent<Slider>();
+        healthBar = GameObject.FindWithTag("HP").GetComponent<Slider>();
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
@@ -80,7 +82,8 @@ public class ScoreAndHp : MonoBehaviour
                 rand = Random.Range(0f, 100f);
                 if (rand <= 7f)  //7프로의 확률
                 {
-                    Instantiate(wine, transform.position, Quaternion.identity);
+                    GameObject.Instantiate(wine, transform.position, Quaternion.identity).transform.parent = parent.transform;
+                    //Instantiate(wine, transform.position, Quaternion.identity);
                 }
             }
             else

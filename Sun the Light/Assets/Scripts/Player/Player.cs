@@ -59,25 +59,6 @@ public class Player : MonoBehaviour
 
     }
 
-    void Update()
-    {
-        //if (Input.GetKeyDown(KeyCode.S) && skillCoolImg.fillAmount == 1.0f)
-        //{
-            //if (isFire)
-            //{
-                //FireSkill();
-                //isFire = false;
-            //}
-            
-        //}
-
-        //if (!isFire)  //쿨타임 아직 안찼을때만 쿨타임 감소시킴
-        //{
-        //    cooltime();
-        //}
-    }
-
-
     void cooltime()
     {
         if (curTime > 0)

@@ -96,7 +96,7 @@ public class CityTrigger : MonoBehaviour
             isStart = false;
             timer = 0;
             star.loop = false;
-            star.Stop();
+            //star.Stop();
         }
     }
 }

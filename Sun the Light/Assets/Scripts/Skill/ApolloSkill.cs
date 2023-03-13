@@ -16,25 +16,39 @@ public class ApolloSkill : MonoBehaviour
     private bool isBasicSkill = true;
     private void Update()
     {
-        if (isFire)
-        {
-            float time = Random.Range(2f, 4f);
-            Invoke("NoteSkill", time);
-            isFire = false;
-        }
-
         if (isBasicSkill)
         {
             float time = Random.Range(3f, 5f);
             Invoke("BasicSkill", time);
             isBasicSkill = false;
         }
+
+        if (isFire)
+        {
+            float time = Random.Range(2f, 4f);
+            Invoke("NoteSkill", time);
+            isFire = false;
+        }
     }
     void BasicSkill()
     {
         float rand = Random.Range(-1f, 3f);
         Vector3 basicPos = transform.position + new Vector3(0, rand, 0);
-        basic = Instantiate(smallnote1, basicPos, transform.rotation);
+        //int rand_skillnum = Random.Range(1, 4);  //
+        //float rand_rotate = Random.Range(-45f, 45f);
+        //Debug.Log(rand_rotate);
+        //switch (rand_skillnum)
+        //{
+            //case 1:
+                basic = Instantiate(smallnote1, basicPos, transform.rotation);
+                //break;
+            //case 2:
+               // basic = Instantiate(smallnote2, basicPos, Quaternion.Euler(rand_rotate, 0, 0));
+               // break;
+            //case 3:
+               // basic = Instantiate(smallnote3, basicPos, Quaternion.Euler(rand_rotate, 0, 0));
+                //break;
+        //}
         Rigidbody2D basicRigid = basic.GetComponent<Rigidbody2D>();
         basicRigid.AddForce(Vector2.left * 10, ForceMode2D.Impulse);
         isBasicSkill = true;
