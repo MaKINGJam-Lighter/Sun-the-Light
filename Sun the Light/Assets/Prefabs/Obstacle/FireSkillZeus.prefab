@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 4689812338887086544}
   - component: {fileID: -6245445249910122866}
   - component: {fileID: 2748139654957675521}
-  - component: {fileID: 5860893930830072225}
   - component: {fileID: 4372629905170961361}
   - component: {fileID: 2843864161732929577}
+  - component: {fileID: 5258755280385080345}
   m_Layer: 0
   m_Name: FireSkillZeus
   m_TagString: Obstacle
@@ -203,29 +203,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &5860893930830072225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7511446267817272168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65588d091445b40e6ae67ddc3a4a6cbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UIScore: {fileID: 0}
-  UIMaxScore: {fileID: 0}
-  gameManager: {fileID: 0}
-  healthBar: {fileID: 1377496804903792212, guid: 1f5fbc7a266ec0248b2896d308dff1d0,
-    type: 3}
-  score: 0
-  hp: 1
-  life: 3
-  destroyClip: {fileID: 0}
-  hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
-  wine: {fileID: 1502205879178094365, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
 --- !u!95 &4372629905170961361
 Animator:
   serializedVersion: 3
@@ -261,3 +238,24 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0043123057, y: 0.03018486}
   m_Size: {x: 0.30417943, y: 1.4278826}
   m_Direction: 0
+--- !u!114 &5258755280385080345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7511446267817272168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44a019d7c6eb38f4f80ca54a13009ece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIScore: {fileID: 0}
+  UIMaxScore: {fileID: 0}
+  gameManager: {fileID: 0}
+  healthBar: {fileID: 0}
+  score: 900
+  hp: 10
+  life: 3
+  destroyClip: {fileID: 8300000, guid: a2a2327ffc191447d8338e32beb2b1a6, type: 3}
+  hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}

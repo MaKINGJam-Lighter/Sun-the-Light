@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 3410113061445460644}
   - component: {fileID: 6576190591632030781}
   - component: {fileID: 803164029980008428}
+  - component: {fileID: -7609405858472535903}
+  - component: {fileID: 74572567384464151}
+  - component: {fileID: 349306072459782921}
   m_Layer: 0
   m_Name: Smallnote3
   m_TagString: Untagged
@@ -104,3 +107,59 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-7609405858472535903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7153958145313240699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44a019d7c6eb38f4f80ca54a13009ece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIScore: {fileID: 0}
+  UIMaxScore: {fileID: 0}
+  gameManager: {fileID: 0}
+  healthBar: {fileID: 0}
+  score: 400
+  hp: 10
+  life: 3
+  destroyClip: {fileID: 8300000, guid: a2a2327ffc191447d8338e32beb2b1a6, type: 3}
+  hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
+--- !u!70 &74572567384464151
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7153958145313240699}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.79, y: 0.82}
+  m_Direction: 0
+--- !u!95 &349306072459782921
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7153958145313240699}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 779d1c168624f4e9ba7a0811c8efcd81, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
