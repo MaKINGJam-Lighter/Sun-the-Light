@@ -137,13 +137,15 @@ MonoBehaviour:
   UIScore: {fileID: 0}
   UIMaxScore: {fileID: 0}
   gameManager: {fileID: 0}
-  wine: {fileID: 1502205879178094365, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
+  healthBar: {fileID: 1377496804903792212, guid: 1f5fbc7a266ec0248b2896d308dff1d0,
+    type: 3}
   score: 100
   hp: 2
   life: 1
   destroyClip: {fileID: 8300000, guid: a2a2327ffc191447d8338e32beb2b1a6, type: 3}
   hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
-  playerEffectAudioSource: {fileID: 0}
+  wine: {fileID: 1502205879178094365, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
+  parent: {fileID: 3597525510079925012}
 --- !u!50 &131975940340480512
 Rigidbody2D:
   serializedVersion: 4
@@ -412,13 +414,15 @@ MonoBehaviour:
   UIScore: {fileID: 0}
   UIMaxScore: {fileID: 0}
   gameManager: {fileID: 0}
-  wine: {fileID: 1502205879178094365, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
+  healthBar: {fileID: 1377496804903792212, guid: 1f5fbc7a266ec0248b2896d308dff1d0,
+    type: 3}
   score: 100
   hp: 2
   life: 1
   destroyClip: {fileID: 8300000, guid: a2a2327ffc191447d8338e32beb2b1a6, type: 3}
   hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
-  playerEffectAudioSource: {fileID: 0}
+  wine: {fileID: 1502205879178094365, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
+  parent: {fileID: 3597525510079925012}
 --- !u!50 &7266087819255881883
 Rigidbody2D:
   serializedVersion: 4
@@ -687,13 +691,15 @@ MonoBehaviour:
   UIScore: {fileID: 0}
   UIMaxScore: {fileID: 0}
   gameManager: {fileID: 0}
-  wine: {fileID: 1502205879178094365, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
+  healthBar: {fileID: 1377496804903792212, guid: 1f5fbc7a266ec0248b2896d308dff1d0,
+    type: 3}
   score: 100
   hp: 2
   life: 1
   destroyClip: {fileID: 8300000, guid: a2a2327ffc191447d8338e32beb2b1a6, type: 3}
   hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
-  playerEffectAudioSource: {fileID: 0}
+  wine: {fileID: 1502205879178094365, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
+  parent: {fileID: 3597525510079925012}
 --- !u!50 &7898789425030726165
 Rigidbody2D:
   serializedVersion: 4
@@ -1016,13 +1022,15 @@ MonoBehaviour:
   UIScore: {fileID: 0}
   UIMaxScore: {fileID: 0}
   gameManager: {fileID: 0}
-  wine: {fileID: 1502205879178094365, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
+  healthBar: {fileID: 1377496804903792212, guid: 1f5fbc7a266ec0248b2896d308dff1d0,
+    type: 3}
   score: 100
   hp: 2
   life: 1
   destroyClip: {fileID: 8300000, guid: a2a2327ffc191447d8338e32beb2b1a6, type: 3}
   hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
-  playerEffectAudioSource: {fileID: 0}
+  wine: {fileID: 1502205879178094365, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
+  parent: {fileID: 3597525510079925012}
 --- !u!50 &3886276004063942099
 Rigidbody2D:
   serializedVersion: 4
@@ -1291,13 +1299,15 @@ MonoBehaviour:
   UIScore: {fileID: 0}
   UIMaxScore: {fileID: 0}
   gameManager: {fileID: 0}
-  wine: {fileID: 1502205879178094365, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
+  healthBar: {fileID: 1377496804903792212, guid: 1f5fbc7a266ec0248b2896d308dff1d0,
+    type: 3}
   score: 100
   hp: 2
   life: 1
   destroyClip: {fileID: 8300000, guid: a2a2327ffc191447d8338e32beb2b1a6, type: 3}
   hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
-  playerEffectAudioSource: {fileID: 0}
+  wine: {fileID: 1502205879178094365, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
+  parent: {fileID: 3597525510079925012}
 --- !u!50 &8378567429069262404
 Rigidbody2D:
   serializedVersion: 4
@@ -1566,13 +1576,15 @@ MonoBehaviour:
   UIScore: {fileID: 0}
   UIMaxScore: {fileID: 0}
   gameManager: {fileID: 0}
-  wine: {fileID: 1502205879178094365, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
+  healthBar: {fileID: 1377496804903792212, guid: 1f5fbc7a266ec0248b2896d308dff1d0,
+    type: 3}
   score: 100
   hp: 2
   life: 1
   destroyClip: {fileID: 8300000, guid: a2a2327ffc191447d8338e32beb2b1a6, type: 3}
   hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
-  playerEffectAudioSource: {fileID: 0}
+  wine: {fileID: 1502205879178094365, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
+  parent: {fileID: 3597525510079925012}
 --- !u!50 &1142657079324135902
 Rigidbody2D:
   serializedVersion: 4
@@ -1841,13 +1853,15 @@ MonoBehaviour:
   UIScore: {fileID: 0}
   UIMaxScore: {fileID: 0}
   gameManager: {fileID: 0}
-  wine: {fileID: 1502205879178094365, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
+  healthBar: {fileID: 1377496804903792212, guid: 1f5fbc7a266ec0248b2896d308dff1d0,
+    type: 3}
   score: 100
   hp: 2
   life: 1
   destroyClip: {fileID: 8300000, guid: a2a2327ffc191447d8338e32beb2b1a6, type: 3}
   hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
-  playerEffectAudioSource: {fileID: 0}
+  wine: {fileID: 1502205879178094365, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
+  parent: {fileID: 3597525510079925012}
 --- !u!50 &5718563971698076723
 Rigidbody2D:
   serializedVersion: 4
@@ -2116,13 +2130,15 @@ MonoBehaviour:
   UIScore: {fileID: 0}
   UIMaxScore: {fileID: 0}
   gameManager: {fileID: 0}
-  wine: {fileID: 1502205879178094365, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
+  healthBar: {fileID: 1377496804903792212, guid: 1f5fbc7a266ec0248b2896d308dff1d0,
+    type: 3}
   score: 100
   hp: 2
   life: 1
   destroyClip: {fileID: 8300000, guid: a2a2327ffc191447d8338e32beb2b1a6, type: 3}
   hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
-  playerEffectAudioSource: {fileID: 0}
+  wine: {fileID: 1502205879178094365, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
+  parent: {fileID: 3597525510079925012}
 --- !u!50 &8572422350989991543
 Rigidbody2D:
   serializedVersion: 4

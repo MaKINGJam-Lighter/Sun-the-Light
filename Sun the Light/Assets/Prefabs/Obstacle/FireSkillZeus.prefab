@@ -216,10 +216,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65588d091445b40e6ae67ddc3a4a6cbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
   UIScore: {fileID: 0}
   UIMaxScore: {fileID: 0}
   gameManager: {fileID: 0}
+  healthBar: {fileID: 1377496804903792212, guid: 1f5fbc7a266ec0248b2896d308dff1d0,
+    type: 3}
   score: 0
   hp: 1
   life: 3

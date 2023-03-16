@@ -24,12 +24,12 @@ public class LevelManager : MonoBehaviour
     private AudioClip[] BGMClips;
 
     private float score;
-    //private bool once = true;
+    private bool once = true;
     private bool once2 = true;
     private bool once3 = true;
     private bool once4 = true;
     private bool once5 = true;
-   // private bool isZeusKilled = false;
+    private bool isZeusKilled = false;
     private bool isApolloKilled = false;
 
     private void Awake()
@@ -41,6 +41,8 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         levels[0].SetLevel();
+        BGMAudioSource.clip = BGMClips[0];
+        BGMAudioSource.Play();
     }
 
     // Update is called once per frame
@@ -48,7 +50,20 @@ public class LevelManager : MonoBehaviour
     {
         GetScore();
 
-        if(score >= 7000 && isApolloKilled)
+        if (isZeusKilled)
+        {
+            levels[5].SetLevel();  //마지막 레벨(무한)
+            if (once)
+            {
+                levelUpText.enabled = true;
+                Invoke("TurnOffText", 1f);
+                BGMAudioSource.clip = BGMClips[5];
+                BGMAudioSource.Play();
+                
+            }
+
+        }
+        else if(score >= 7000 && isApolloKilled)
         {
             levels[4].SetLevel();  //레벨 5, 제우스 등장
             if (once5)
@@ -57,6 +72,8 @@ public class LevelManager : MonoBehaviour
                 Invoke("TurnOffText", 1f);
                 zeus.SetActive(true);
                 once5 = false;
+                BGMAudioSource.clip = BGMClips[4];
+                BGMAudioSource.Play();
             }
         }
         else if(isApolloKilled)  //레벨 4
@@ -66,6 +83,8 @@ public class LevelManager : MonoBehaviour
             {
                 levelUpText.enabled = true;
                 Invoke("TurnOffText", 1f);
+                BGMAudioSource.clip = BGMClips[3];
+                BGMAudioSource.Play();
             }
         } 
         else if (score >= 3000)  //레벨 3, 아폴론 등장
@@ -79,6 +98,8 @@ public class LevelManager : MonoBehaviour
                 Debug.Log("아폴론 등장");
                 
                 once3 = false;
+                BGMAudioSource.clip = BGMClips[2];
+                BGMAudioSource.Play();
             }
         }
         else if (score >= 1000)   //레벨 2
@@ -88,10 +109,13 @@ public class LevelManager : MonoBehaviour
             {
                 levelUpText.enabled = true;
                 Invoke("TurnOffText", 1f);
+                BGMAudioSource.clip = BGMClips[1];
+                BGMAudioSource.Play();
             }
         }
+        
         isApolloKilled = GameObject.Find("GameManager").GetComponent<GameManager>().isApolloKilled;
-        //isZeusKilled = GameObject.Find("GameManager").GetComponent<GameManager>().isZeusKilled;
+        isZeusKilled = GameObject.Find("GameManager").GetComponent<GameManager>().isZeusKilled;
     }
 
     private void GetScore()
@@ -109,6 +133,10 @@ public class LevelManager : MonoBehaviour
         else if (score >= 5000 && score < 7000)
         {
             once4 = false;
+        }
+        else if (isZeusKilled)
+        {
+            once = false;
         }
         else return;
     }

@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -19,8 +19,8 @@ public class Player : MonoBehaviour
     public GameObject fire_backward;
     public GameObject fire_skill;
 
-    Animator bigWheelAnim;  //나중에 애니메이션 위해서
-    Animator smallWheelAnim;
+    //Animator bigWheelAnim;  //나중에 애니메이션 위해서
+    //Animator smallWheelAnim;
     Rigidbody2D player;
 
     public float curTime;
@@ -31,8 +31,8 @@ public class Player : MonoBehaviour
 
     void Awake()
     {
-        bigWheelAnim = gameObject.transform.GetChild(3).GetComponent<Animator>();
-        smallWheelAnim = gameObject.transform.GetChild(4).GetComponent<Animator>();
+        //bigWheelAnim = gameObject.transform.GetChild(3).GetComponent<Animator>();
+        //smallWheelAnim = gameObject.transform.GetChild(4).GetComponent<Animator>();
         player = GetComponent<Rigidbody2D>();
         curTime = coolTime;
         //player.AddForce(Vector2.down * gravity, ForceMode2D.Impulse);
@@ -42,17 +42,37 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
         player.velocity = Vector2.down * gravity;
-    }
-
-    void Update()
-    {
         Move();
         Fire(); //총알 발사
-        FireSkill();
         Reload();
+        if (isFire)
+        {
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                FireSkill();
+                isFire = false;
+            }
+        }
+        else
+        {
+            cooltime();
+        }
+
     }
 
-
+    void cooltime()
+    {
+        if (curTime > 0)
+        {
+            curTime -= Time.deltaTime;
+        }
+        else //curTime <= 0
+        {
+            curTime = 13.0f;
+            skillCoolImg.fillAmount = 1.0f;
+            isFire = true;
+        }
+    }
 
     void Move()
     {
@@ -215,12 +235,7 @@ public class Player : MonoBehaviour
         {
             curTime -= Time.deltaTime;
         }
-        else //curTime <= 0
-        {
-            curTime = 13.0f;
-            skillCoolImg.fillAmount = 1.0f;
-            isFire = true;
-        }
+        //isFire = false;
     }
 
 }
