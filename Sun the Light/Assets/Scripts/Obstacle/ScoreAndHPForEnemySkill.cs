@@ -99,8 +99,8 @@ public class ScoreAndHPForEnemySkill : MonoBehaviour
     private void DestroyObstacle()
     {
         gameObject.GetComponent<Animator>().SetBool("isDestroy", true);
-        effectAudioSource.clip = destroyClip;
-        effectAudioSource.Play();
+        //effectAudioSource.clip = destroyClip;
+        //effectAudioSource.Play();
     }
 
     private void DecreaseHP()
