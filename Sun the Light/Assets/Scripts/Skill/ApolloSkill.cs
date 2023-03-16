@@ -14,6 +14,11 @@ public class ApolloSkill : MonoBehaviour
 
     private bool isFire = true;
     private bool isBasicSkill = true;
+
+    private void Start()
+    {
+        gameObject.transform.position = new Vector3(3.8f, 0, 0);
+    }
     private void Update()
     {
         if (isBasicSkill)
