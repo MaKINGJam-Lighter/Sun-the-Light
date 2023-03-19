@@ -139,12 +139,13 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   healthBar: {fileID: 1377496804903792212, guid: 1f5fbc7a266ec0248b2896d308dff1d0,
     type: 3}
+  wine: {fileID: 1502205879178094365, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
   score: 300
   hp: 5
   life: 2
   destroyClip: {fileID: 8300000, guid: a2a2327ffc191447d8338e32beb2b1a6, type: 3}
   hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
-  wine: {fileID: 1502205879178094365, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
+  playerEffectAudioSource: {fileID: 0}
   parent: {fileID: 3597525510079925012}
 --- !u!50 &7523277427160611594
 Rigidbody2D:
@@ -465,12 +466,13 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   healthBar: {fileID: 1377496804903792212, guid: 1f5fbc7a266ec0248b2896d308dff1d0,
     type: 3}
+  wine: {fileID: 1502205879178094365, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
   score: 300
   hp: 5
   life: 2
   destroyClip: {fileID: 8300000, guid: a2a2327ffc191447d8338e32beb2b1a6, type: 3}
-  hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
-  wine: {fileID: 1502205879178094365, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
+  hurtClip: {fileID: 8300000, guid: ab33e68491bc1dd4497ec75d8b8e4c11, type: 3}
+  playerEffectAudioSource: {fileID: 0}
   parent: {fileID: 3597525510079925012}
 --- !u!50 &853428384790846935
 Rigidbody2D:
@@ -742,12 +744,13 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   healthBar: {fileID: 1377496804903792212, guid: 1f5fbc7a266ec0248b2896d308dff1d0,
     type: 3}
+  wine: {fileID: 1502205879178094365, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
   score: 300
   hp: 5
   life: 2
   destroyClip: {fileID: 8300000, guid: a2a2327ffc191447d8338e32beb2b1a6, type: 3}
   hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
-  wine: {fileID: 1502205879178094365, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
+  playerEffectAudioSource: {fileID: 0}
   parent: {fileID: 3597525510079925012}
 --- !u!50 &3206876780244703436
 Rigidbody2D:
