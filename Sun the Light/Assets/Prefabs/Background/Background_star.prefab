@@ -885,6 +885,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healBar: {fileID: 0}
+  starAudioSource: {fileID: 0}
+  cityAudioSource: {fileID: 0}
+  playerAudioSource: {fileID: 0}
+  hurtClip: {fileID: 0}
+  cityFire: {fileID: 0}
 --- !u!61 &3194945163451389876
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -921,7 +926,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f6074dae36b854ab9870073cc7277287, type: 3}
+  m_audioClip: {fileID: 8300000, guid: af68a00cb2a6c2f4085b613bc77c3b29, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

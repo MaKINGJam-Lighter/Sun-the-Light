@@ -175,6 +175,9 @@ MonoBehaviour:
   restartBtn: {fileID: 1252783437}
   paper: {fileID: 47692148}
   toMain: {fileID: 834923188}
+  scores: []
+  top7_scores: []
+  scoreboard: {fileID: 0}
 --- !u!114 &8662175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -967,6 +970,9 @@ MonoBehaviour:
   restartBtn: {fileID: 0}
   paper: {fileID: 0}
   toMain: {fileID: 0}
+  scores: []
+  top7_scores: []
+  scoreboard: {fileID: 0}
 --- !u!114 &212404857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1117,7 +1123,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 839e248fa2fe36c4db91d2137c6f4f9e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e7384802440f941409fb4ecf51cdc038, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2012,6 +2018,9 @@ MonoBehaviour:
   restartBtn: {fileID: 1252783437}
   paper: {fileID: 47692148}
   toMain: {fileID: 834923188}
+  scores: []
+  top7_scores: []
+  scoreboard: {fileID: 0}
 --- !u!114 &406137640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2866,6 +2875,9 @@ MonoBehaviour:
   restartBtn: {fileID: 0}
   paper: {fileID: 0}
   toMain: {fileID: 0}
+  scores: []
+  top7_scores: []
+  scoreboard: {fileID: 0}
 --- !u!114 &641617779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5406,6 +5418,9 @@ MonoBehaviour:
   restartBtn: {fileID: 1252783437}
   paper: {fileID: 47692148}
   toMain: {fileID: 834923188}
+  scores: []
+  top7_scores: []
+  scoreboard: {fileID: 0}
 --- !u!114 &957688838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5826,6 +5841,9 @@ MonoBehaviour:
   restartBtn: {fileID: 0}
   paper: {fileID: 0}
   toMain: {fileID: 0}
+  scores: []
+  top7_scores: []
+  scoreboard: {fileID: 0}
 --- !u!1 &1061262676
 GameObject:
   m_ObjectHideFlags: 0
@@ -6362,6 +6380,9 @@ MonoBehaviour:
   restartBtn: {fileID: 1252783437}
   paper: {fileID: 47692148}
   toMain: {fileID: 834923188}
+  scores: []
+  top7_scores: []
+  scoreboard: {fileID: 0}
 --- !u!114 &1131945413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7219,6 +7240,9 @@ MonoBehaviour:
   restartBtn: {fileID: 1252783437}
   paper: {fileID: 47692148}
   toMain: {fileID: 834923188}
+  scores: []
+  top7_scores: []
+  scoreboard: {fileID: 0}
 --- !u!114 &1379309703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7713,6 +7737,9 @@ MonoBehaviour:
   restartBtn: {fileID: 0}
   paper: {fileID: 0}
   toMain: {fileID: 0}
+  scores: []
+  top7_scores: []
+  scoreboard: {fileID: 0}
 --- !u!114 &1459040398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8958,6 +8985,9 @@ MonoBehaviour:
   restartBtn: {fileID: 0}
   paper: {fileID: 0}
   toMain: {fileID: 0}
+  scores: []
+  top7_scores: []
+  scoreboard: {fileID: 0}
 --- !u!114 &1820550102
 MonoBehaviour:
   m_ObjectHideFlags: 0
