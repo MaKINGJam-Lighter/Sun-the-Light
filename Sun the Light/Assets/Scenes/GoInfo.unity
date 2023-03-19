@@ -996,9 +996,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 2
-  m_Text: "PM | \uAE30\uD68D > \uAE40\uD55C\uB098\n\uADF8\uB798\uD53D > \uAE40\uD55C\uB098
-    \uC774\uAC00\uBE48\n\uCF54\uB354 > \uD669\uC8FC\uC774 \uAE40\uB3C4\uD76C \uC804\uC720\uC9C4
-    \uC774\uAC00\uBE48 \uAE40\uD55C\uB098"
+  m_Text: "PM | \uAE30\uD68D | \uC791\uACE1 > \uAE40\uD55C\uB098\n\uADF8\uB798\uD53D
+    > \uC774\uAC00\uBE48 \uAE40\uD55C\uB098\n\uCF54\uB354 > \uAE40\uB3C4\uD76C \uC804\uC720\uC9C4
+    \uD669\uC8FC\uC774 \uC774\uAC00\uBE48 \uAE40\uD55C\uB098"
 --- !u!222 &1534623793
 CanvasRenderer:
   m_ObjectHideFlags: 0
