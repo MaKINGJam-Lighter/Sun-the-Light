@@ -50,7 +50,7 @@ public class Player : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.S))
             {
                 FireSkill();
-                isFire = false;
+                //isFire = false;
             }
         }
         else
@@ -219,7 +219,7 @@ public class Player : MonoBehaviour
             rigid.AddForce(dirVec.normalized * 5, ForceMode2D.Impulse);
 
         }
-        //isFire = false;
+        isFire = false;
     }
 
 }
