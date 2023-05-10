@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -522,7 +522,6 @@ GameObject:
   m_Component:
   - component: {fileID: 993599149}
   - component: {fileID: 993599148}
-  - component: {fileID: 993599147}
   - component: {fileID: 993599150}
   m_Layer: 1
   m_Name: Main Camera
@@ -531,14 +530,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &993599147
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 993599146}
-  m_Enabled: 1
 --- !u!20 &993599148
 Camera:
   m_ObjectHideFlags: 0
@@ -753,12 +744,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -773,7 +764,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 993599148}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -781,7 +772,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1096838155
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &1323043827
@@ -921,12 +912,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 2
-  m_Text: "\r\uBE0C\uAE08\uB300\uD1B5\uB839 Track : Fallen Angel -https://youtu.be/XHVbcFWftpk\r\nSong
-    : Rafael Krux - Expedition (orchestralis.net)\r Creative Commons \n\u2014 Attribution
-    4.0 International (CC BY 4.0)\r Music promoted by \uD504\uB9AC\uBBA4\uC9C1 \nVlog
-    Copyright Free Music \rLink : https://youtu.be/9sl57Qv0PlQ\r\nhttps://freesound.org/people/EminYILDIRIM/sounds/577450/\r
-    Song: Fireball Impact\r Creative Commons \n\u2014 Attribution 4.0 International
-    (CC BY 4.0)\rMusic promoted by Emin YILDIRIM\r\n https://freesound.org/people/dersuperanton/sounds/434462/\r
+  m_Text: "https://freesound.org/people/EminYILDIRIM/sounds/577450/\r Song: Fireball
+    Impact\r Creative Commons \n\u2014 Attribution 4.0 International (CC BY 4.0)\rMusic
+    promoted by Emin YILDIRIM\r\n https://freesound.org/people/dersuperanton/sounds/434462/\r
     Song: Getting hit hugh\r Creative Commons \n\u2014 Attribution 3.0 International
     (CC BY 3.0)\r Music promoted by dersuperanton\r\n https://freesound.org/people/EminYILDIRIM/sounds/540828/\r
     Song: Fire Fuse Ignite Flame\r Creative Commons \n\u2014 Attribution 4.0 International
@@ -1008,9 +996,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 2
-  m_Text: "PM | \uAE30\uD68D > \uAE40\uD55C\uB098\n\uADF8\uB798\uD53D > \uAE40\uD55C\uB098
-    \uC774\uAC00\uBE48\n\uCF54\uB354 > \uD669\uC8FC\uC774 \uAE40\uB3C4\uD76C \uC804\uC720\uC9C4
-    \uC774\uAC00\uBE48 \uAE40\uD55C\uB098"
+  m_Text: "PM | \uAE30\uD68D | \uC791\uACE1 > \uAE40\uD55C\uB098\n\uADF8\uB798\uD53D
+    > \uC774\uAC00\uBE48 \uAE40\uD55C\uB098\n\uCF54\uB354 > \uAE40\uB3C4\uD76C \uC804\uC720\uC9C4
+    \uD669\uC8FC\uC774 \uC774\uAC00\uBE48 \uAE40\uD55C\uB098"
 --- !u!222 &1534623793
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1030,6 +1018,9 @@ GameObject:
   - component: {fileID: 1657346051}
   - component: {fileID: 1657346050}
   - component: {fileID: 1657346052}
+  - component: {fileID: 1657346053}
+  - component: {fileID: 1657346054}
+  - component: {fileID: 1657346055}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -1111,10 +1102,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 329100d2f29d00847b9dbd75d162ec7a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9794ee1ad048e8d4cb64d43b6914284a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: -0.69
   Loop: 1
   Mute: 0
   Spatialize: 0
@@ -1197,6 +1188,40 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!81 &1657346053
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1657346049}
+  m_Enabled: 1
+--- !u!114 &1657346054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1657346049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcf0b1fc35fbce54ba32187f2bd0dc13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1657346055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1657346049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa4c517e8b86994ca5260e4e65b92d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBgm: 1
+  isEffect: 0
 --- !u!1 &1908489936
 GameObject:
   m_ObjectHideFlags: 0

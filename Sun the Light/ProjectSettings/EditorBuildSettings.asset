@@ -26,4 +26,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ClearGame.unity
     guid: 0dfc8b65127d52e429e3241ed25f8f14
+  - enabled: 1
+    path: Assets/Scenes/SoundControl.unity
+    guid: f61015e1adfc27b4ba80a39508d2c400
+  - enabled: 1
+    path: Assets/Scenes/ScoreBoard.unity
+    guid: e7ce0dc60f273a044abc3ccd4d3eca56
+  - enabled: 1
+    path: Assets/Scenes/ScoreBoard_Button.unity
+    guid: 663891e10f890b54bad295f98314edb8
   m_configObjects: {}

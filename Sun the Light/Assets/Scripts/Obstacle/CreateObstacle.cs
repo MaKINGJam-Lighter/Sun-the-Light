@@ -55,7 +55,7 @@ public class CreateObstacle : MonoBehaviour
             obstacleIndex = Random.Range(0, 8)%8;
             //obstacleIndex = Random.Range(obstacleIndexArr[0], obstacleIndexArr[1]) % 8;
         }
-        Debug.Log(obstacleIndex);  //왜 범위를 넘는지.. .
+        //Debug.Log(obstacleIndex);  //왜 범위를 넘는지.. .
         //obstacleIndex = Random.Range(0, 8);
         if (obstacleIndex == 6 || obstacleIndex == 7)
         {

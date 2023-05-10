@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -6245445249910122866}
   - component: {fileID: -4124146875354152141}
   - component: {fileID: 2748139654957675521}
+  - component: {fileID: -3467579622622251039}
   m_Layer: 0
   m_Name: FireSkill
   m_TagString: Skill
@@ -146,9 +147,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b4121da32314a4f45afcf91504af8077, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ce5da02b3ee3d4ba8a38c15914823bed, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -232,3 +233,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-3467579622622251039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7511446267817272168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa4c517e8b86994ca5260e4e65b92d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBgm: 0
+  isEffect: 1

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2243065853821260772}
   - component: {fileID: 1828524857182617294}
   - component: {fileID: 4196504596658665752}
+  - component: {fileID: 1441653662752818103}
   m_Layer: 0
   m_Name: Cloud1
   m_TagString: Obstacle
@@ -119,12 +120,13 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   healthBar: {fileID: 1377496804903792212, guid: 1f5fbc7a266ec0248b2896d308dff1d0,
     type: 3}
+  wine: {fileID: 1502205879178094365, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
   score: 500
   hp: 10
   life: 3
-  destroyClip: {fileID: 8300000, guid: 3b88468a119494313a7f856e6a046ba0, type: 3}
-  hurtClip: {fileID: 8300000, guid: c171b29f8bcd54f1c9a080db239bf1ef, type: 3}
-  wine: {fileID: 1502205879178094365, guid: ac37600b45db30c4fa9c1e171be18c2b, type: 3}
+  destroyClip: {fileID: 8300000, guid: a2a2327ffc191447d8338e32beb2b1a6, type: 3}
+  hurtClip: {fileID: 8300000, guid: ab33e68491bc1dd4497ec75d8b8e4c11, type: 3}
+  playerEffectAudioSource: {fileID: 0}
   parent: {fileID: 3597525510079925012}
 --- !u!95 &2243065853821260772
 Animator:
@@ -262,6 +264,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1441653662752818103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806615063404114738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa4c517e8b86994ca5260e4e65b92d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBgm: 0
+  isEffect: 1
 --- !u!1 &3597525510079925012
 GameObject:
   m_ObjectHideFlags: 0

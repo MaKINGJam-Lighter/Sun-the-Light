@@ -13,6 +13,9 @@ public class ScoreAndHp : MonoBehaviour
     public Slider healthBar;
 
     [SerializeField]
+    public GameObject wine;
+
+    [SerializeField]
     private float score;
 
     [SerializeField]
@@ -28,7 +31,7 @@ public class ScoreAndHp : MonoBehaviour
     private AudioClip hurtClip;
 
     [SerializeField]
-    private GameObject wine;
+    //private GameObject wine;
 
     private AudioSource playerEffectAudioSource;
     private AudioSource effectAudioSource;
@@ -57,10 +60,7 @@ public class ScoreAndHp : MonoBehaviour
 
     private void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.Space))
-        //{
-           // DestroyObstacle();
-        //}
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -94,6 +94,18 @@ public class ScoreAndHp : MonoBehaviour
                     effectAudioSource.Play();
                 }
             }
+        }
+    }
+
+    public void Wine()
+    {
+        float ran = Random.Range(0, 99);
+        Debug.Log(ran);
+        if(ran<7)
+        {
+            //Instantiate(wine);
+            Instantiate(wine, gameObject.transform.position, Quaternion.identity);
+            //wine.transform.SetParent(parent.transform, false);
         }
     }
 

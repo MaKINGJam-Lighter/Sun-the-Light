@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -6367670778844915462}
   - component: {fileID: 7789475855727944140}
   - component: {fileID: 5782560712038068998}
+  - component: {fileID: -8009865676573211619}
   m_Layer: 0
   m_Name: PlayerFireBackward
   m_TagString: Skill
@@ -176,7 +177,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 40dad3c10130148018596a9b1f39c8b9, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5551782d398207645a6d0d27a410bb30, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -262,3 +263,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-8009865676573211619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6880222555565516658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa4c517e8b86994ca5260e4e65b92d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBgm: 0
+  isEffect: 1

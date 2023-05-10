@@ -8,17 +8,23 @@ public class SceneController : MonoBehaviour
 {
     [SerializeField]
     private Animator fadeInOutPanel;
-
+    public static bool is_pushed_for_RankScene=false;
+    private void Start()
+    {
+        is_pushed_for_RankScene = false;
+    }
     public void GoHome()
     {
         fadeInOutPanel.SetBool("isFadeOut", true);
         Invoke("DelayGoHome", 1f);
+        is_pushed_for_RankScene = true;
     }
 
     public void GoStartAnimation()
     {
         fadeInOutPanel.SetBool("isFadeOut", true);
         Invoke("DelayGoStartAnimation", 1f);
+        is_pushed_for_RankScene = true;
     }
 
     public void GoHowToPlay()
