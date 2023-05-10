@@ -95,6 +95,7 @@ public class LevelManager : MonoBehaviour
                 levelUpText.enabled = true;
                 Invoke("TurnOffText", 1f);
                 apollo.SetActive(true);
+                Debug.Log(apollo.activeSelf);
                 Debug.Log("아폴론 등장");
                 
                 once3 = false;

@@ -40,13 +40,13 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if (isFire && Input.GetKeyDown(KeyCode.S))
+        if (isFire)
         {
-            // if (Input.GetKeyDown(KeyCode.S))
-            // {
-            FireSkill();
-            //isFire = false;
-            // }
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                FireSkill();
+            isFire = false;
+            }
         }
         else
         {
