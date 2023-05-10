@@ -45,13 +45,13 @@ public class Player : MonoBehaviour
         Move();
         Fire(); //총알 발사
         Reload();
-        if (isFire)
+        if (isFire && Input.GetKeyDown(KeyCode.S))
         {
-            if (Input.GetKeyDown(KeyCode.S))
-            {
+            // if (Input.GetKeyDown(KeyCode.S))
+            // {
                 FireSkill();
                 //isFire = false;
-            }
+            // }
         }
         else
         {
