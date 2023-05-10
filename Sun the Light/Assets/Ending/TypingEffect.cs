@@ -23,7 +23,7 @@ public class TypingEffect : MonoBehaviour
     //스코어보드
     public List<string> scores = new List<string>();
     public List<string> top7_scores = new List<string>();
-    public ScoreBoard scoreboard = new ScoreBoard();
+     ScoreBoard scoreboard = new ScoreBoard();
     public static int present_score_index;
 
     public void gotoScoreboard()
