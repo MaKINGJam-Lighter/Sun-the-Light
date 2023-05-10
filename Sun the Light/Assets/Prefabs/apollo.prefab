@@ -356,11 +356,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cccd060874132a1469bdf493d9903b11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
+  healthBar: {fileID: 8750885856930493101}
   gameManager: {fileID: 0}
   score: 600
   hp: 20
-  hpBar: {fileID: 0}
+  hpBar: {fileID: 8750885856930493101}
   attackPower: 2
   isApollo: 1
 --- !u!114 &500199883365491900
