@@ -78,7 +78,7 @@ public class ScoreAndHPForZeus : MonoBehaviour
                     Debug.Log("isZeusKilled==true");
                     isZeus = false;
                 }
-                zeusAnimator.SetBool("isDead", true);
+                // zeusAnimator.SetBool("isDead", true);
                 Destroy(collision.gameObject);
                 Invoke("DestroyObstacle", 1f);
             }

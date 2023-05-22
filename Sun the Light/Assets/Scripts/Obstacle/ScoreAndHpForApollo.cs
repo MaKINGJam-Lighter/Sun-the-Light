@@ -67,6 +67,7 @@ public class ScoreAndHpForApollo : MonoBehaviour
             playerEffectAudioSource = collision.GetComponent<AudioSource>();
             DecreaseHP();
         }
+
         else if (collision.tag == "Skill")
         {
             hpBar.value -= attackPower;
@@ -82,7 +83,8 @@ public class ScoreAndHpForApollo : MonoBehaviour
                 }
                //zeusAnimator.SetBool("isDead", true);
                 Destroy(collision.gameObject);
-                Invoke("DestroyObstacle", 1f);
+                DestroyObstacle();
+                //Invoke("DestroyObstacle", 1f);
             }
             else
             {

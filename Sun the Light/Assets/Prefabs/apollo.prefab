@@ -226,7 +226,7 @@ GameObject:
   - component: {fileID: 5961661637929266261}
   m_Layer: 0
   m_Name: apollo
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -328,10 +328,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.25, y: 0.33}
+  m_Offset: {x: 0.03264101, y: 0.33}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -342,7 +342,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.48, y: 0.66}
+  m_Size: {x: 1.0452819, y: 0.66}
   m_EdgeRadius: 0
 --- !u!114 &7584055275600395797
 MonoBehaviour:
@@ -356,10 +356,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cccd060874132a1469bdf493d9903b11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBar: {fileID: 8750885856930493101}
+  healthBar: {fileID: 0}
   gameManager: {fileID: 0}
   score: 600
-  hp: 20
+  hp: 25
   hpBar: {fileID: 8750885856930493101}
   attackPower: 2
   isApollo: 1

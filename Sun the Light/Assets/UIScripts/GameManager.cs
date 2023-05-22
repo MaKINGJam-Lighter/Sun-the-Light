@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
                     isDuplication = true;
                 }
             }
-            sr.Close();
+            //sr.Close();
             if (isDuplication == false)
             {
                 //here
@@ -55,6 +55,7 @@ public class GameManager : MonoBehaviour
                 is_repititive = true;
             }
             is_typed = true;
+            sr.Close();
         }
     }
 }
