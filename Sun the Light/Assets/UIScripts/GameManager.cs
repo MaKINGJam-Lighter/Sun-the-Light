@@ -43,19 +43,19 @@ public class GameManager : MonoBehaviour
                     isDuplication = true;
                 }
             }
-            //sr.Close();
-            if (isDuplication == false)
+            sr.Close();
+            if (!isDuplication)
             {
                 //here
                 Debug.Log("GameManager 스크립트: 중복x->파일쓰기");
-                score_board.WriteTxtAppend("Assets/UIScripts/ScoreText.txt", present_score.ToString() + "\n");
+                score_board.WriteTxtAppend("Assets/UIScripts/ScoreText.txt", present_score.ToString() + "\n");      
             }
             else
             {
                 is_repititive = true;
             }
             is_typed = true;
-            sr.Close();
+          
         }
     }
 }
