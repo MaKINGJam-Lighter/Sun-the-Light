@@ -8,6 +8,7 @@ using System;
 using UnityEngine.SceneManagement;
 using System.Linq;
 using System.Runtime.InteropServices.ComTypes;
+using TMPro.EditorUtilities;
 
 public class Scoreboard_Synchronization : MonoBehaviour
 {
@@ -100,14 +101,13 @@ public class Scoreboard_Synchronization : MonoBehaviour
             }
 
         }
-
+    
         //2. IDWithScore top7 점수랑 비교
         {
             StreamReader sr = new StreamReader(new FileStream("Assets/UIScripts/IDWithScore.txt", FileMode.Open));
             while (sr.EndOfStream == false) // 스트림의 끝에 도달했는지 알려주는 EndOfStream 프로퍼티
             {
                 string line = sr.ReadLine();
-                Debug.Log("line: " + line);
                 string[] score_and_id;
                 score_and_id = line.Split('\t');
                 top7_IdWithScoreText.Add(int.Parse(score_and_id[0]));
@@ -117,19 +117,25 @@ public class Scoreboard_Synchronization : MonoBehaviour
             top7_IdWithScoreText.Sort();
             top7_IdWithScoreText.Reverse();
             top7_IdWithScoreText.RemoveRange(7, top7_IdWithScoreText.Count - 7);//첫번째인자: 삭제시작 인덱스, 두번째인자: 삭제할갯수
+           
         }//파일 읽고 넣는 블록
 
         //scoretext상위 7개가 IdWithText상위 7개랑 일치하는지 비교
         //scoretext의 점수가 idWithText에 없으면 idWithText에 쓰기.  
-        bool isExist = false;
+        
         for (int i = 0; i < 7; i++) {
-            for (int j = 0; j < 7; j++) {
-                if (top7_scores_nonstatic[i] == top7_IdWithScoreText[j].ToString()) {
+            bool isExist = false;
+            for (int j = 0; j < 7; j++)
+            {
+                if (top7_scores_nonstatic[i] == top7_IdWithScoreText[j].ToString())
+                {
                     isExist = true;
+                    break;
                 }
             }
             if (!isExist)
             {
+                Debug.Log("싱크 안 맞는 점수: "+ top7_scores_nonstatic[i].ToString());
                 WriteTxtAppend("Assets/UIScripts/IDWithScore.txt", top7_scores_nonstatic[i] + "\t"+" "+"\n");
             }
         }
