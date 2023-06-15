@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1868,6 +1868,7 @@ GameObject:
   - component: {fileID: 896288107}
   - component: {fileID: 896288109}
   - component: {fileID: 896288108}
+  - component: {fileID: 896288110}
   m_Layer: 5
   m_Name: Pause
   m_TagString: Untagged
@@ -1933,6 +1934,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 896288106}
   m_CullTransparentMesh: 0
+--- !u!114 &896288110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896288106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9780d4ea7c6e97488e8723b36ae912a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseImage: {fileID: 896288106}
+  healthBar: {fileID: 246318603}
+  score: {fileID: 798631056}
+  maxScore: {fileID: 102314634}
+  skillShadow: {fileID: 157562597}
+  skill: {fileID: 1748301943}
+  Text: {fileID: 6460089}
 --- !u!1 &896789397 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5041492618847424908, guid: b7695711245da42588a729e59017e626,
